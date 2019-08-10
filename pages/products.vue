@@ -32,10 +32,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.title {
-  @apply text-2xl text-left w-full font-bold my-3;
-  border-bottom: solid 3px #343a40;
-}
+@import '~/assets/css/title.pcss';
 
 .product-name {
   @apply text-xl text-left w-full font-bold mt-5 mb-1;

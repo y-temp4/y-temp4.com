@@ -15,10 +15,7 @@
 </template>
 
 <style lang="postcss" scoped>
-.title {
-  @apply text-2xl text-left w-full font-bold my-3;
-  border-bottom: solid 3px #343a40;
-}
+@import '~/assets/css/title.pcss';
 
 .label {
   @apply mt-3 mb-1 inline-block;
