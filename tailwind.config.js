@@ -1,11 +1,16 @@
-/*
-** TailwindCSS Configuration File
-**
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-*/
+const openColors = require('open-color/open-color.json')
+
+const colors = {}
+
+Object.entries(openColors).forEach(([color, values]) => {
+  if (['white', 'black'].includes(color)) return
+  colors[color] = { ...values }
+})
+
 module.exports = {
-  theme: {},
+  theme: {
+    extend: { colors }
+  },
   variants: {},
   plugins: []
 }
