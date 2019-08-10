@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper container">
-    <img src="https://github.com/y-temp4.png" alt="y-temp4" class="icon" />
+  <main>
+    <img src="~/assets/images/me.jpeg" alt="y-temp4" class="icon" />
     <span class="name">Yuki Terashima</span>
     <span class="description">Hello there, this is y-temp4's portfolio site.</span>
     <h2 class="heading">About me</h2>
@@ -10,14 +10,17 @@
       <span v-for="skill in skills" :key="skill.name" class="skill">{{ skill.name }}</span>
     </p>
     <h2 class="heading">Products</h2>
-    <p>WIP</p>
+    <p>
+      個人開発が好きで、これまでにいくつかサービス・アプリを作っています。詳しくは
+      <n-link to="/products">こちら</n-link>
+    </p>
     <h2 class="heading">Accounts</h2>
     <ul class="list">
       <li v-for="account in accounts">
-        <a class="link" :href="account.url" target="_blank">{{ account.name }}</a>
+        <a :href="account.url" target="_blank" rel="noopener noreferrer">{{ account.name }}</a>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -26,6 +29,7 @@ import accounts from '~/data/accounts.json'
 
 export default {
   components: {},
+  layout: 'home',
   data() {
     return {
       skills,
@@ -36,13 +40,9 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.wrapper {
-  @apply mx-auto max-w-2xl flex items-center flex-col py-6 px-8 bg-white;
-}
-
 .icon {
   width: 150px;
-  @apply rounded-full;
+  @apply rounded-full w-40 h-40;
 }
 
 .name {
@@ -51,10 +51,6 @@ export default {
 
 .description {
   @apply m-6 text-lg;
-}
-
-p {
-  @apply w-full;
 }
 
 .heading {
@@ -79,9 +75,5 @@ p {
       content: '・';
     }
   }
-}
-
-.link {
-  @apply underline text-blue-4;
 }
 </style>

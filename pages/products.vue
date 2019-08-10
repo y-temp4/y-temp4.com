@@ -1,0 +1,43 @@
+<template>
+  <main>
+    <h2 class="heading">Products</h2>
+    <p>これまでに作ったサービス・アプリの一覧です。</p>
+    <template v-for="product in products">
+      <h3 class="product-name">
+        <a :href="product.product_url" target="_blank" rel="noopener noreferrer">{{ product.name }}</a>
+      </h3>
+      <p>
+        {{ product.description }} 👉詳しくは
+        <a
+          :href="product.introduction_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >こちら</a>
+      </p>
+    </template>
+  </main>
+</template>
+
+<script>
+import products from '~/data/products.json'
+
+export default {
+  components: {},
+  data() {
+    return {
+      products
+    }
+  }
+}
+</script>
+
+<style lang="postcss" scoped>
+.heading {
+  @apply text-2xl text-left w-full font-bold my-3;
+  border-bottom: solid 3px #343a40;
+}
+
+.product-name {
+  @apply text-xl text-left w-full font-bold my-3;
+}
+</style>

@@ -1,11 +1,11 @@
 {
   "name": "y-temp4.com",
   "version": "1.0.0",
-  "description": " Portfolio site of y-temp4.",
+  "description": "Portfolio site of y-temp4.",
   "author": "y-temp4",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "PORT=3333 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
