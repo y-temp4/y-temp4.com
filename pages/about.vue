@@ -2,15 +2,7 @@
   <main>
     <h2 class="title">About me</h2>
     <p>1994 年生まれ。大学は情報系の学部で、学生時代は課外活動と個人開発を通じて Web 制作の技術を学びました。</p>
-    <p>
-      卒業後、ALIS という 2017 年に
-      <a
-        href="https://coincheck.com/ja/article/262"
-        target="_blank"
-        rel="noopener noreferrer"
-      >ICO</a>
-      で約 4.3 億円を調達したブロックチェーンのスタートアップにジョインしました。
-    </p>
+    <p>卒業後、ALIS というブロックチェーン系のスタートアップにジョインしました。</p>
     <p>
       <span class="font-bold">入社したときに書いた記事：</span>
       <a
