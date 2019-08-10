@@ -2,7 +2,7 @@
   <main>
     <img src="~/assets/images/me.jpeg" alt="y-temp4" class="icon" />
     <span class="name">Yuki Terashima</span>
-    <span class="description">Hello there, this is y-temp4's portfolio site.</span>
+    <span class="description">Hello there! This is my portfolio site.</span>
     <h2 class="heading">About me</h2>
     <p>
       フリーランスエンジニア。主に Web のフロントエンドや、ブロックチェーン関連の技術に興味があります。
@@ -59,15 +59,39 @@ export default {
 
 <style lang="postcss" scoped>
 .icon {
-  @apply rounded-full w-40 h-40;
+  @apply rounded-full w-32 h-auto;
 }
 
 .name {
-  @apply text-3xl font-bold mt-2 text-center;
+  @apply text-3xl font-bold mt-2 text-center whitespace-no-wrap;
 }
 
 .description {
-  @apply m-6 text-lg;
+  @apply relative px-6 py-3 bg-blue-5 text-white rounded-lg font-bold my-4;
+
+  &:before {
+    content: '';
+    transform: rotate(45deg);
+    right: 20px;
+    top: -15px;
+    border-left: 20px solid #339af0;
+    border-top: 20px solid #339af0;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    @apply absolute block w-0 h-0 rounded-full;
+  }
+
+  &:after {
+    content: '';
+    transform: rotate(45deg);
+    right: 35px;
+    top: -20px;
+    border-left: 20px solid #ffffff;
+    border-top: 20px solid #ffffff;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    @apply absolute block w-0 h-0 rounded-full;
+  }
 }
 
 .heading {
