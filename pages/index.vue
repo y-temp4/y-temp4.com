@@ -60,7 +60,7 @@ export default {
 }
 
 .list {
-  @apply w-full;
+  @apply w-full mt-1;
 
   & li {
     &:before {
