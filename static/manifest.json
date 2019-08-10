@@ -2,6 +2,13 @@
   "short_name": "y-temp4.com",
   "name": "y-temp4.com",
   "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon.jpg",
+      "sizes": "612x612",
+      "type": "image/jpg"
+    }
+  ],
   "background_color": "#339af0",
   "theme_color": "#339af0",
   "display": "standalone"
