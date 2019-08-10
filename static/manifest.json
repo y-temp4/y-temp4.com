@@ -4,9 +4,9 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "/favicon.jpg",
+      "src": "/favicon.png",
       "sizes": "612x612",
-      "type": "image/jpg"
+      "type": "image/png"
     }
   ],
   "background_color": "#339af0",

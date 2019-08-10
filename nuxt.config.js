@@ -16,7 +16,7 @@ export default {
     ],
     link: [
       { rel: 'manifest', href: '/manifest.json' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.jpg' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
   /*
