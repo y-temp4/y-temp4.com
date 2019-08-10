@@ -21,6 +21,11 @@
         <a :href="account.url" target="_blank" rel="noopener noreferrer">{{ account.name }}</a>
       </li>
     </ul>
+    <h2 class="heading">Contact</h2>
+    <p>
+      お問い合わせは
+      <n-link to="/contact">こちら</n-link>、もしくは Twitter の DM にて受け付けています。
+    </p>
   </main>
 </template>
 
