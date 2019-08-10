@@ -3,12 +3,18 @@
     <h2 class="title">Contact</h2>
     <form name="contact" method="POST" data-netlify="true">
       <p class="text-red-4">※入力項目はすべて必須です。</p>
-      <label class="label">お名前：</label>
-      <input class="input" type="text" name="name" required />
-      <label class="label">メールアドレス：</label>
-      <input class="input" type="email" name="email" required />
-      <label class="label">本文：</label>
-      <textarea class="input" name="message" required></textarea>
+      <label class="label">
+        お名前：
+        <input class="input" type="text" name="name" required />
+      </label>
+      <label class="label">
+        メールアドレス：
+        <input class="input" type="email" name="email" required />
+      </label>
+      <label class="label">
+        本文：
+        <textarea class="input" name="message" required></textarea>
+      </label>
       <button class="button" type="submit">送信</button>
     </form>
   </main>
@@ -18,7 +24,7 @@
 @import '~/assets/css/title.pcss';
 
 .label {
-  @apply mt-3 mb-1 inline-block;
+  @apply mt-3 mb-1 inline-block w-full;
 }
 
 .input {
