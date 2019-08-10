@@ -5,6 +5,7 @@ export default {
    */
   head: {
     title: process.env.npm_package_name || '',
+    titleTemplate: `%s - ${process.env.npm_package_name || ''}`,
     htmlAttrs: {
       lang: 'ja'
     },

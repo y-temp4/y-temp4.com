@@ -29,6 +29,9 @@ export default {
     hobbySkills() {
       return skills.filter(skill => skill.level === 'hobby')
     }
+  },
+  head: {
+    title: 'Skills'
   }
 }
 </script>

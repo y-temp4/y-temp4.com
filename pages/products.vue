@@ -22,11 +22,13 @@
 import products from '~/data/products.json'
 
 export default {
-  components: {},
   data() {
     return {
       products
     }
+  },
+  head: {
+    title: 'Products'
   }
 }
 </script>

@@ -42,6 +42,14 @@
   </main>
 </template>
 
+<script>
+export default {
+  head: {
+    title: 'About me'
+  }
+}
+</script>
+
 <style lang="postcss" scoped>
 @import '~/assets/css/title.pcss';
 

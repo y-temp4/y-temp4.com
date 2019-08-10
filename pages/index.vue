@@ -39,20 +39,21 @@ import skills from '~/data/skills.json'
 import accounts from '~/data/accounts.json'
 
 export default {
-  components: {},
   layout: 'home',
   data() {
     return {
       skills,
       accounts
     }
+  },
+  head: {
+    titleTemplate: ''
   }
 }
 </script>
 
 <style lang="postcss" scoped>
 .icon {
-  width: 150px;
   @apply rounded-full w-40 h-40;
 }
 
