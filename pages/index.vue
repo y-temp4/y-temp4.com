@@ -1,72 +1,87 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        y-temp4.com
-      </h1>
-      <h2 class="subtitle">
-         Portfolio site of y-temp4.
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div class="wrapper container">
+    <img src="https://github.com/y-temp4.png" alt="y-temp4" class="icon" />
+    <span class="name">Yuki Terashima</span>
+    <span class="description">Hello there, this is y-temp4's portfolio site.</span>
+    <h2 class="heading">About me</h2>
+    <p>Webの主にフロントエンドや、ブロックチェーン関連の技術に興味があります。</p>
+    <h2 class="heading">Skills</h2>
+    <p>
+      <span v-for="skill in skills" :key="skill.name" class="skill">{{ skill.name }}</span>
+    </p>
+    <h2 class="heading">Products</h2>
+    <p>WIP</p>
+    <h2 class="heading">Accounts</h2>
+    <ul class="list">
+      <li v-for="account in accounts">
+        <a class="link" :href="account.url" target="_blank">{{ account.name }}</a>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import skills from '~/data/skills.json'
+import accounts from '~/data/accounts.json'
 
 export default {
-  components: {
-    Logo
+  components: {},
+  data() {
+    return {
+      skills,
+      accounts
+    }
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="postcss" scoped>
+.wrapper {
+  @apply mx-auto max-w-2xl flex items-center flex-col py-6 px-8 bg-white;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.icon {
+  width: 150px;
+  @apply rounded-full;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.name {
+  @apply text-3xl font-bold;
 }
 
-.links {
-  padding-top: 15px;
+.description {
+  @apply m-6 text-lg;
+}
+
+p {
+  @apply w-full;
+}
+
+.heading {
+  @apply text-2xl text-left w-full font-bold my-3;
+  border-bottom: solid 3px #343a40;
+}
+
+.skill {
+  @apply mr-2;
+
+  &:not(:last-child):after {
+    white-space: pre-wrap;
+    content: ' /';
+  }
+}
+
+.list {
+  @apply w-full;
+
+  & li {
+    &:before {
+      content: '・';
+    }
+  }
+}
+
+.link {
+  @apply underline text-blue-4;
 }
 </style>
