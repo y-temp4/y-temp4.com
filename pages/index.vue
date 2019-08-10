@@ -64,7 +64,7 @@ export default {
 
   & li {
     &:before {
-      content: '・';
+      content: '・ ';
     }
   }
 }
