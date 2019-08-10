@@ -28,7 +28,7 @@
 }
 
 .input {
-  @apply bg-gray-2 appearance-none border-2 border-gray-4 rounded w-full py-2 px-4 text-gray-7 leading-tight;
+  @apply bg-gray-2 appearance-none border-2 border-gray-4 rounded w-full py-2 px-3 text-gray-7 leading-tight;
 
   &:focus {
     @apply outline-none bg-white border-blue-5;

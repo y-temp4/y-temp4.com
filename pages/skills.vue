@@ -10,7 +10,10 @@
     <p>
       <span v-for="skill in hobbySkills" :key="skill.name" class="skill">{{ skill.name }}</span>
     </p>
-    <p class="mt-10">基本的にフロントエンドまわりの技術を扱うのが好きです。最近最も興味のある技術は Nuxt.js、TypeScript、Firebase です。</p>
+    <p class="mt-10">
+      基本的にフロントエンドまわりの技術を扱うのが好きです。最近最も興味のある技術は
+      <span class="font-bold">Nuxt.js、TypeScript、Firebase</span> です。
+    </p>
   </main>
 </template>
 

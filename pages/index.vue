@@ -5,13 +5,14 @@
     <span class="description">Hello there, this is y-temp4's portfolio site.</span>
     <h2 class="heading">About me</h2>
     <p>
-      フリーランスエンジニア。主にWebのフロントエンドや、ブロックチェーン関連の技術に興味があります。
+      フリーランスエンジニア。主に Web のフロントエンドや、ブロックチェーン関連の技術に興味があります。
       より詳しいプロフィールは
       <n-link to="/about">こちら</n-link>
     </p>
     <h2 class="heading">Skills</h2>
     <p>
-      どちらかというとフロントエンド関連の技術が得意です。また、最近は Nuxt.js を使った SPA 開発をすることが多いです。詳しくは
+      どちらかというとフロントエンド関連の技術が得意です。また、最近は
+      <span class="font-bold">Nuxt.js</span> を使った SPA 開発をすることが多いです。詳しくは
       <n-link to="/skills">こちら</n-link>
     </p>
     <h2 class="heading">Products</h2>
