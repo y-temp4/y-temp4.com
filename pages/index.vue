@@ -21,11 +21,16 @@
       <n-link to="/products">こちら</n-link>
     </p>
     <h2 class="heading">Accounts</h2>
-    <ul class="list">
-      <li v-for="account in accounts">
-        <a :href="account.url" target="_blank" rel="noopener noreferrer">{{ account.name }}</a>
-      </li>
-    </ul>
+    <div class="accounts">
+      <a
+        v-for="account in accounts"
+        :href="account.url"
+        class="account"
+        target="_blank"
+        rel="noopener noreferrer"
+        :style="`background: ${account.color}`"
+      >{{ account.name }}</a>
+    </div>
     <h2 class="heading">Contact</h2>
     <p>
       お問い合わせは
@@ -70,12 +75,14 @@ export default {
   border-bottom: solid 3px #343a40;
 }
 
-.list {
-  @apply w-full mt-1;
+.accounts {
+  @apply flex flex-row flex-wrap w-full mb-2;
 
-  & li {
-    &:before {
-      content: '・ ';
+  & .account {
+    @apply px-4 py-2 mr-3 mt-2 block rounded-lg text-white text-center font-bold no-underline;
+
+    &:hover {
+      @apply opacity-75;
     }
   }
 }
