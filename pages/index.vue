@@ -17,7 +17,7 @@
     </p>
     <h2 class="heading">Products</h2>
     <p>
-      個人開発が好きで、これまでにいくつかサービス・アプリを作っています。詳しくは
+      個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。詳しくは
       <n-link to="/products">こちら</n-link>
     </p>
     <h2 class="heading">Accounts</h2>

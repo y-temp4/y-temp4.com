@@ -1,7 +1,7 @@
 <template>
   <main>
     <h2 class="title">Products</h2>
-    <p>これまでに作ったサービス・アプリの一覧です。</p>
+    <p>これまでに作ったサービスの一覧です。</p>
     <template v-for="product in products">
       <h3 class="product-name">
         <a :href="product.product_url" target="_blank" rel="noopener noreferrer">{{ product.name }}</a>
