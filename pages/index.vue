@@ -7,7 +7,8 @@
     <p>Webの主にフロントエンドや、ブロックチェーン関連の技術に興味があります。</p>
     <h2 class="heading">Skills</h2>
     <p>
-      <span v-for="skill in skills" :key="skill.name" class="skill">{{ skill.name }}</span>
+      どちらかというとフロントエンド関連の技術が得意です。また、最近は Nuxt.js を使った SPA 開発をすることが多いです。詳しくは
+      <n-link to="/skills">こちら</n-link>
     </p>
     <h2 class="heading">Products</h2>
     <p>
@@ -46,7 +47,7 @@ export default {
 }
 
 .name {
-  @apply text-3xl font-bold;
+  @apply text-3xl font-bold mt-2 text-center;
 }
 
 .description {
@@ -54,17 +55,8 @@ export default {
 }
 
 .heading {
-  @apply text-2xl text-left w-full font-bold my-3;
+  @apply text-2xl text-left w-full font-bold mt-3 mb-1;
   border-bottom: solid 3px #343a40;
-}
-
-.skill {
-  @apply mr-2;
-
-  &:not(:last-child):after {
-    white-space: pre-wrap;
-    content: ' /';
-  }
 }
 
 .list {

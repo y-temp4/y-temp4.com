@@ -1,8 +1,14 @@
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  src: url('~assets/fonts/NotoSansJP-Regular.otf');
+}
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: NotoSansJP, 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
-  word-spacing: 1px;
+  font-feature-settings: "palt" 1;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -27,7 +33,7 @@ body {
 }
 
 .wrapper {
-  @apply mx-auto max-w-2xl py-6 px-8 bg-white;
+  @apply mx-auto max-w-2xl p-6 bg-white;
 
   & main {
     @apply flex items-center flex-col;
@@ -43,5 +49,5 @@ a {
 }
 
 p {
-  @apply w-full;
+  @apply w-full my-2;
 }

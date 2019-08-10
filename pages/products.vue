@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h2 class="heading">Products</h2>
+    <h2 class="title">Products</h2>
     <p>これまでに作ったサービス・アプリの一覧です。</p>
     <template v-for="product in products">
       <h3 class="product-name">
@@ -32,12 +32,12 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.heading {
+.title {
   @apply text-2xl text-left w-full font-bold my-3;
   border-bottom: solid 3px #343a40;
 }
 
 .product-name {
-  @apply text-xl text-left w-full font-bold my-3;
+  @apply text-xl text-left w-full font-bold mt-5 mb-1;
 }
 </style>

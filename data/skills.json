@@ -1,11 +1,50 @@
 [
   {
-    "name": "Vue.js"
+    "name": "Vue.js",
+    "level": "work"
   },
   {
-    "name": "Nuxt.js"
+    "name": "Nuxt.js",
+    "level": "work"
   },
   {
-    "name": "Ruby on Rails"
+    "name": "Ruby on Rails",
+    "level": "work"
+  },
+  {
+    "name": "Python",
+    "level": "work"
+  },
+  {
+    "name": "JavaScript",
+    "level": "work"
+  },
+  {
+    "name": "TypeScript",
+    "level": "work"
+  },
+  {
+    "name": "AWS",
+    "level": "work"
+  },
+  {
+    "name": "Firebase",
+    "level": "hobby"
+  },
+  {
+    "name": "React",
+    "level": "hobby"
+  },
+  {
+    "name": "Flutter",
+    "level": "hobby"
+  },
+  {
+    "name": "Dart",
+    "level": "hobby"
+  },
+  {
+    "name": "Elixir",
+    "level": "hobby"
   }
 ]
