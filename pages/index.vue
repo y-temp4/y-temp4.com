@@ -2,7 +2,7 @@
   <main>
     <img src="~/assets/images/me.jpeg" alt="y-temp4" class="icon" />
     <span class="name">Yuki Terashima</span>
-    <span class="description">Hello there! This is my portfolio site.</span>
+    <span class="description">Hello there! Welcome to my portfolio site.</span>
     <h2 class="heading">About me</h2>
     <p>
       フリーランスエンジニア。主に Web のフロントエンドや、ブロックチェーン関連の技術に興味があります。
