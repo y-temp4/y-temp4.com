@@ -42,10 +42,11 @@ body {
 }
 
 a {
-  @apply underline text-blue-6;
+  transition: opacity 250ms;
+  @apply underline text-blue-8;
 
   &:hover {
-    @apply text-blue-9;
+    @apply opacity-50;
   }
 }
 
