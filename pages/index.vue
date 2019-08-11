@@ -59,7 +59,7 @@ export default {
 
 <style lang="postcss" scoped>
 .icon {
-  @apply rounded-full w-32 h-auto;
+  @apply rounded-full w-32 h-32;
 }
 
 .name {
