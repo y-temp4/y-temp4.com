@@ -19,10 +19,7 @@ export default {
       },
       { name: 'theme-color', content: '#339af0' }
     ],
-    link: [
-      { rel: 'manifest', href: '/manifest.json' },
-      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
-    ]
+    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
   },
   /*
    ** Customize the progress-bar color
@@ -39,5 +36,8 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa']
+  modules: ['@nuxtjs/pwa'],
+  manifest: {
+    lang: 'ja'
+  }
 }
