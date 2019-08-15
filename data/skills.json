@@ -28,6 +28,10 @@
     "level": "work"
   },
   {
+    "name": "SCSS",
+    "level": "work"
+  },
+  {
     "name": "Firebase",
     "level": "hobby"
   },
@@ -45,6 +49,10 @@
   },
   {
     "name": "Elixir",
+    "level": "hobby"
+  },
+  {
+    "name": "PostCSS",
     "level": "hobby"
   }
 ]
