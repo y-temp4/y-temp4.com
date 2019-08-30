@@ -5353,16 +5353,6 @@ lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
-logrocket-vuex@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/logrocket-vuex/-/logrocket-vuex-0.0.3.tgz#e11d65d384f0c9fdac72f984436cc038adf3db90"
-  integrity sha1-4R1l04Twyf2scvmEQ2zAOK3z25A=
-
-logrocket@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-1.0.3.tgz#43354e29099c123d5608fcc18799ce53a87931b4"
-  integrity sha512-0N5AhHNE2MTS09J2FIXj1bSVjTdkn0IVrKkO7rwhtXDPpqbQMICZuq25edGnyXJxppQAxBpOOt2bFgIZBlEZ0g==
-
 loose-envify@^1.0.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -6142,14 +6132,6 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
-
-nuxt-logrocket@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/nuxt-logrocket/-/nuxt-logrocket-1.2.5.tgz#7aefc57f35bbed584a3125614eed72092c12327d"
-  integrity sha512-e5UMGAB7HD/TBoqNWGw43/p8T2lFZIyn9ni83R3gfjEG0c51uMUeJ7tQB3QQlewITVBVseWeuS8FNt0E13yZPw==
-  dependencies:
-    logrocket "^1.0.2"
-    logrocket-vuex "^0.0.3"
 
 nuxt-purgecss@^0.2.1:
   version "0.2.1"

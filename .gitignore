@@ -89,6 +89,3 @@ sw.*
 
 # Vim swap files
 *.swp
-
-# for direnv
-.envrc

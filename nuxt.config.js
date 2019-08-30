@@ -36,7 +36,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', 'nuxt-logrocket'],
+  modules: ['@nuxtjs/pwa'],
   manifest: {
     lang: 'ja'
   }

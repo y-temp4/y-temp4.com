@@ -12,9 +12,8 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/tailwindcss": "^1.1.2",
     "nuxt": "^2.8.1",
-    "nuxt-logrocket": "^1.2.5",
-    "open-color": "^1.7.0",
-    "@nuxtjs/tailwindcss": "^1.1.2"
+    "open-color": "^1.7.0"
   }
 }
