@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
-    "@nuxtjs/tailwindcss": "^1.1.2",
-    "nuxt": "^2.8.1",
+    "@nuxtjs/tailwindcss": "^1.2.0",
+    "nuxt": "^2.10.2",
     "open-color": "^1.7.0"
   }
 }
