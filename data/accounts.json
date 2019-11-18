@@ -18,5 +18,10 @@
     "name": "Blog",
     "url": "https://blog.y-temp4.com",
     "color": "#2e74ce"
+  },
+  {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/channel/UCbeUc4_bzOwLGKnKeO_XBHg",
+    "color": "#ff0000"
   }
 ]
