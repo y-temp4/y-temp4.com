@@ -1,5 +1,11 @@
 [
   {
+    "name": "レジスタンスvsスパイ",
+    "product_url": "https://devtalk.jp/products/283",
+    "description": "5人以上で遊べる人狼ライクな戦略型ゲーム",
+    "introduction_url": "https://qiita.com/y-temp4/items/9df31146414f6ba45a92"
+  },
+  {
     "name": "ALIS 予約投稿システム",
     "product_url": "https://alis-scheduled-post.web.app/",
     "description": "ALISの記事を予約投稿するためのサービス",
