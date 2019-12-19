@@ -9,21 +9,19 @@
   --color-warn: var(--oc-red-4);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-body: var(--oc-gray-9);
-    --color-wrapper: var(--oc-gray-8);
-    --color-link: #fff;
-    --color-text: #fff;
-    --color-title-border: #fff;
-    --color-warn: var(--oc-red-6);
-  }
+.dark-theme {
+  --color-body: var(--oc-gray-9);
+  --color-wrapper: var(--oc-gray-8);
+  --color-link: #fff;
+  --color-text: #fff;
+  --color-title-border: #fff;
+  --color-warn: var(--oc-red-6);
 
-  a {
+  & a {
     @apply underline;
 
     &:hover {
-      text-decoration: none !important;
+      @apply no-underline;
     }
   }
 }
@@ -48,8 +46,7 @@ html {
   font-size: 16px;
   font-feature-settings: 'palt' 1;
   letter-spacing: 0.05em;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -57,10 +54,11 @@ html {
 
 body {
   @apply text-text bg-body;
+  transition: background-color 0.3s;
 }
 
 .default-container {
-  @apply p-6;
+  @apply p-6 pb-16;
 }
 
 .wrapper {
