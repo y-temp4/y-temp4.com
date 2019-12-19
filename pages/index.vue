@@ -58,8 +58,10 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+@import '~/assets/css/title.pcss';
+
 .icon {
-  @apply rounded-full w-32 h-32;
+  @apply rounded-full w-32 h-32 border-white border-4;
 }
 
 .name {
@@ -86,8 +88,8 @@ export default {
     transform: rotate(45deg);
     right: 35px;
     top: -20px;
-    border-left: 20px solid #ffffff;
-    border-top: 20px solid #ffffff;
+    border-left: 20px solid var(--color-wrapper);
+    border-top: 20px solid var(--color-wrapper);
     border-right: 20px solid transparent;
     border-bottom: 20px solid transparent;
     @apply absolute block w-0 h-0 rounded-full;
@@ -95,15 +97,14 @@ export default {
 }
 
 .heading {
-  @apply text-2xl text-left w-full font-bold mt-3 mb-1;
-  border-bottom: solid 3px #343a40;
+  @apply title mt-3 mb-1;
 }
 
 .accounts {
   @apply flex flex-row flex-wrap w-full mb-2;
 
   & .account {
-    @apply px-4 py-2 mr-3 mt-2 block rounded-lg text-white text-center font-bold no-underline;
+    @apply px-4 py-2 mr-3 mt-2 block rounded-lg text-white text-center font-bold no-underline border-white border-2;
 
     &:hover {
       @apply opacity-75;

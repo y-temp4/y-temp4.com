@@ -2,7 +2,7 @@
   <main>
     <h2 class="title">Contact</h2>
     <form name="contact" method="POST" data-netlify="true">
-      <p class="text-red-4">※入力項目はすべて必須です。</p>
+      <p class="warn-text">※入力項目はすべて必須です。</p>
       <label class="label">
         お名前：
         <input class="input" type="text" name="name" required />
@@ -30,6 +30,10 @@ export default {
 
 <style lang="postcss" scoped>
 @import '~/assets/css/title.pcss';
+
+.warn-text {
+  @apply text-warn font-bold;
+}
 
 .label {
   @apply mt-3 mb-1 inline-block w-full;
