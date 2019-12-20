@@ -9,8 +9,17 @@ Object.entries(openColors).forEach(([color, values]) => {
 
 module.exports = {
   theme: {
-    extend: { colors }
-  },
-  variants: {},
-  plugins: []
+    extend: {
+      colors
+    },
+    colors: {
+      body: 'var(--color-body)',
+      wrapper: 'var(--color-wrapper)',
+      link: 'var(--color-link)',
+      text: 'var(--color-text)',
+      'title-border': 'var(--color-title-border)',
+      warn: 'var(--color-warn)',
+      white: '#ffffff'
+    }
+  }
 }
