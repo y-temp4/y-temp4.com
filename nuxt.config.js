@@ -39,5 +39,8 @@ export default {
   modules: ['@nuxtjs/pwa'],
   manifest: {
     lang: 'ja'
+  },
+  generate: {
+    fallback: true
   }
 }
