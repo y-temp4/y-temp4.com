@@ -7,6 +7,7 @@
 <script>
 const LOCAL_STORAGE_DARKMODE_KEY = 'darkmode'
 const DARK_THEME_CLASS = 'dark-theme'
+const LIGHT_THEME_CLASS = 'light-theme'
 
 export default {
   mounted() {
@@ -22,6 +23,7 @@ export default {
         document.body.classList.add(DARK_THEME_CLASS)
       } else {
         localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, 'off')
+        document.body.classList.add(LIGHT_THEME_CLASS)
       }
       return
     }
@@ -29,7 +31,11 @@ export default {
     const darkModeOnInLocalStorage =
       localStorage.getItem(LOCAL_STORAGE_DARKMODE_KEY) === 'on'
 
-    if (darkModeOnInLocalStorage) document.body.classList.add(DARK_THEME_CLASS)
+    if (darkModeOnInLocalStorage) {
+      document.body.classList.add(DARK_THEME_CLASS)
+    } else {
+      document.body.classList.add(LIGHT_THEME_CLASS)
+    }
   },
   methods: {
     toggleDarkMode() {
@@ -39,9 +45,11 @@ export default {
       if (darkModeOn) {
         localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, 'off')
         document.body.classList.remove(DARK_THEME_CLASS)
+        document.body.classList.add(LIGHT_THEME_CLASS)
       } else {
         localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, 'on')
         document.body.classList.add(DARK_THEME_CLASS)
+        document.body.classList.remove(LIGHT_THEME_CLASS)
       }
     }
   }
