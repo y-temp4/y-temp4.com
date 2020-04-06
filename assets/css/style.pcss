@@ -26,6 +26,34 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-body: var(--oc-gray-9);
+    --color-wrapper: var(--oc-gray-8);
+    --color-link: #fff;
+    --color-text: #fff;
+    --color-title-border: #fff;
+    --color-warn: var(--oc-red-6);
+
+    & a {
+      @apply underline;
+
+      &:hover {
+        @apply no-underline;
+      }
+    }
+  }
+
+  .light-theme {
+    --color-body: var(--oc-gray-2);
+    --color-wrapper: #fff;
+    --color-link: var(--oc-blue-8);
+    --color-text: var(--oc-gray-8);
+    --color-title-border: var(--oc-gray-8);
+    --color-warn: var(--oc-red-4);
+  }
+}
+
 @font-face {
   font-family: Raleway;
   font-weight: normal;
