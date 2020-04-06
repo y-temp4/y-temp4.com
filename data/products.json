@@ -1,5 +1,11 @@
 [
   {
+    "name": "AnyMake",
+    "product_url": "https://anymake.app",
+    "description": "プロダクト投稿型のサービス",
+    "introduction_url": "https://note.com/y_temp4/n/n70366e863c13"
+  },
+  {
     "name": "レジスタンスvsスパイ",
     "product_url": "https://devtalk.jp/products/283",
     "description": "5人以上で遊べる人狼ライクな戦略型ゲーム",
