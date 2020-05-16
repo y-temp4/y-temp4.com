@@ -1,4 +1,4 @@
-# y-temp4.com
+# [y-temp4.com](https://y-temp4.com)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/be7df1bf-16b1-49a4-945a-445d1a648258/deploy-status)](https://app.netlify.com/sites/y-temp4/deploys)
 
@@ -10,7 +10,7 @@
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:3333
 $ yarn dev
 
 # build for production and launch server
