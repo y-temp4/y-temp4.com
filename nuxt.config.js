@@ -17,6 +17,11 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://y-temp4.com/icon.png'
+      },
       { name: 'theme-color', content: '#339af0' }
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
