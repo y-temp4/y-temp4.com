@@ -20,6 +20,15 @@
       個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。詳しくは
       <n-link to="/products">こちら</n-link>
     </p>
+    <h2 class="heading">Works</h2>
+    <p>
+      共著で Vue 3 についての技術書を執筆しました。
+      <a
+        href="https://booth.pm/ja/items/1978702"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Vue 3 解体新書</a>
+    </p>
     <h2 class="heading">Accounts</h2>
     <div class="accounts">
       <a
