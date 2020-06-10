@@ -1,24 +1,22 @@
 <template>
   <main>
     <h2 class="title">Contact</h2>
-    <client-only>
-      <form name="contact" method="POST" data-netlify="true">
-        <p class="warn-text">※入力項目はすべて必須です。</p>
-        <label class="label">
-          お名前：
-          <input class="input" type="text" name="name" required />
-        </label>
-        <label class="label">
-          メールアドレス：
-          <input class="input" type="email" name="email" required />
-        </label>
-        <label class="label">
-          本文：
-          <textarea class="input" name="message" required></textarea>
-        </label>
-        <button class="button" type="submit">送信</button>
-      </form>
-    </client-only>
+    <form name="contact" method="POST" data-netlify="true">
+      <p class="warn-text">※入力項目はすべて必須です。</p>
+      <label class="label">
+        お名前：
+        <input class="input" type="text" name="name" required />
+      </label>
+      <label class="label">
+        メールアドレス：
+        <input class="input" type="email" name="email" required />
+      </label>
+      <label class="label">
+        本文：
+        <textarea class="input" name="message" required></textarea>
+      </label>
+      <button class="button" type="submit">送信</button>
+    </form>
   </main>
 </template>
 
