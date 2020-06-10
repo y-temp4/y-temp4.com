@@ -1,7 +1,8 @@
 <template>
   <main>
     <h2 class="title">Contact</h2>
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" netlify>
+      <input type="hidden" name="form-name" value="contact" />
       <p class="warn-text">※入力項目はすべて必須です。</p>
       <label class="label">
         お名前：
