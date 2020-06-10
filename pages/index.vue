@@ -48,11 +48,12 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import skills from '~/data/skills.json'
 import accounts from '~/data/accounts.json'
 
-export default {
+export default Vue.extend({
   layout: 'home',
   data() {
     return {
@@ -63,7 +64,7 @@ export default {
   head: {
     titleTemplate: ''
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>

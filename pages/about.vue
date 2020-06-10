@@ -1,35 +1,33 @@
 <template>
   <main>
     <h2 class="title">About me</h2>
-    <p
-      >1994 年生まれ。大学は情報系の学部で、学生時代は課外活動と個人開発を通じて
-      Web 開発の技術を学びました。</p
-    >
-    <p
-      >卒業後、ALIS
-      というブロックチェーン系のスタートアップにジョインしました。</p
-    >
+    <p>
+      1994 年生まれ。大学は情報系の学部で、学生時代は課外活動と個人開発を通じて
+      Web 開発の技術を学びました。
+    </p>
+    <p>
+      卒業後、ALIS
+      というブロックチェーン系のスタートアップにジョインしました。
+    </p>
     <p>
       <span class="font-bold">入社したときに書いた記事：</span>
       <a
         href="https://medium.com/@alismedia/alis%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E7%B4%B9%E4%BB%8B7-%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E5%AF%BA%E5%B6%8B-f0856af30ce0"
         target="_blank"
         rel="noopener noreferrer"
-        >【ALISメンバー紹介7】エンジニア寺嶋 - ALIS - Medium</a
-      >
+      >【ALISメンバー紹介7】エンジニア寺嶋 - ALIS - Medium</a>
     </p>
-    <p
-      >その後、約 1 年で ALIS
-      を退職し、現在はフリーランスとして活動しています。</p
-    >
+    <p>
+      その後、約 1 年で ALIS
+      を退職し、現在はフリーランスとして活動しています。
+    </p>
     <p>
       <span class="font-bold">参考：</span>
       <a
         href="https://blog.y-temp4.com/entry/leave-alis"
         target="_blank"
         rel="noopener noreferrer"
-        >株式会社 ALIS を退職しました - Lorem ipsum</a
-      >
+      >株式会社 ALIS を退職しました - Lorem ipsum</a>
     </p>
     <div class="heading">趣味など</div>
     <p>
@@ -38,8 +36,7 @@
         href="http://worldtrigger.info/"
         target="_blank"
         rel="noopener noreferrer"
-        >ワールドトリガー</a
-      >
+      >ワールドトリガー</a>
       ということになっています。
     </p>
     <p>また、ミニマリストでもあり、ほぼ毎日同じ服を着て過ごしています。</p>
@@ -47,12 +44,13 @@
   </main>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   head: {
     title: 'About me'
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>

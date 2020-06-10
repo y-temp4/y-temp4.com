@@ -18,10 +18,11 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import products from '~/data/products.json'
 
-export default {
+export default Vue.extend({
   data() {
     return {
       products
@@ -30,7 +31,7 @@ export default {
   head: {
     title: 'Products'
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>

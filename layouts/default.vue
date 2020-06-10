@@ -8,8 +8,11 @@
   </div>
 </template>
 
-<script>
-import ToggleDarkModeButton from '~/components/ToggleDarkModeButton'
+<script lang="ts">
+import Vue from 'vue'
+import ToggleDarkModeButton from '~/components/ToggleDarkModeButton.vue'
 
-export default { components: { ToggleDarkModeButton } }
+export default Vue.extend({
+  components: { ToggleDarkModeButton }
+})
 </script>

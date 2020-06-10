@@ -17,11 +17,11 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import skills from '~/data/skills.json'
 
-export default {
-  components: {},
+export default Vue.extend({
   computed: {
     workSkills() {
       return skills.filter(skill => skill.level === 'work')
@@ -33,7 +33,7 @@ export default {
   head: {
     title: 'Skills'
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>

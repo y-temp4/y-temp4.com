@@ -20,12 +20,14 @@
   </main>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
   head: {
     title: 'Contact'
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>
