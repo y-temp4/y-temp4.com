@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "PORT=3333 nuxt-ts",
-    "generate": "nuxt generate"
+    "generate": "nuxt-ts generate"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.4.9",
