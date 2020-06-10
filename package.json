@@ -5,12 +5,12 @@
   "author": "y-temp4",
   "private": true,
   "scripts": {
-    "dev": "PORT=3333 nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "PORT=3333 nuxt-ts",
+    "generate": "nuxt-ts generate"
   },
   "dependencies": {
+    "@nuxt/typescript-build": "1.0.2",
+    "@nuxt/typescript-runtime": "0.4.9",
     "@nuxtjs/pwa": "3.0.0-beta.20",
     "@nuxtjs/tailwindcss": "1.3.2",
     "nuxt": "2.12.2",

@@ -1,14 +1,11 @@
-export default {
+import { Configuration } from '@nuxt/types'
+
+const config: Configuration = {
   mode: 'universal',
-  /*
-   ** Headers of the page
-   */
   head: {
     title: process.env.npm_package_name || '',
     titleTemplate: `%s - ${process.env.npm_package_name || ''}`,
-    htmlAttrs: {
-      lang: 'ja'
-    },
+    htmlAttrs: { lang: 'ja' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,26 +23,12 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
   },
-  /*
-   ** Customize the progress-bar color
-   */
   loading: { color: '#339af0' },
-  /*
-   ** Global CSS
-   */
   css: ['~/assets/css/style.pcss'],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: ['@nuxtjs/tailwindcss'],
-  /*
-   ** Nuxt.js modules
-   */
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxt/typescript-build'],
   modules: ['@nuxtjs/pwa'],
-  manifest: {
-    lang: 'ja'
-  },
-  generate: {
-    fallback: true
-  }
+  manifest: { lang: 'ja' },
+  generate: { fallback: true }
 }
+
+export default config

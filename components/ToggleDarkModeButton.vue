@@ -4,12 +4,13 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 const LOCAL_STORAGE_DARKMODE_KEY = 'darkmode'
 const DARK_THEME_CLASS = 'dark-theme'
 const LIGHT_THEME_CLASS = 'light-theme'
 
-export default {
+export default Vue.extend({
   mounted() {
     const isFirstAccess = !localStorage.getItem('darkmode')
 
@@ -53,7 +54,7 @@ export default {
       }
     }
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>
