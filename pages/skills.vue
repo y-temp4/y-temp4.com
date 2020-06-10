@@ -4,11 +4,15 @@
     <p>これまでに触れたことのある技術を雑にまとめたものです。</p>
     <h3 class="heading">実務経験があるもの</h3>
     <p>
-      <span v-for="skill in workSkills" :key="skill.name" class="skill">{{ skill.name }}</span>
+      <span v-for="skill in workSkills" :key="skill.name" class="skill">{{
+        skill.name
+      }}</span>
     </p>
     <h3 class="heading">趣味で扱ったことがあるもの</h3>
     <p>
-      <span v-for="skill in hobbySkills" :key="skill.name" class="skill">{{ skill.name }}</span>
+      <span v-for="skill in hobbySkills" :key="skill.name" class="skill">{{
+        skill.name
+      }}</span>
     </p>
     <p class="mt-10">
       基本的にフロントエンドまわりの技術を扱うのが好きです。最近最も興味のある技術は

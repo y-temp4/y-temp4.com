@@ -4,7 +4,13 @@
     <p>これまでに作ったサービスの一覧です。</p>
     <template v-for="product in products">
       <h3 class="product-name">
-        <a :href="product.product_url" target="_blank" rel="noopener noreferrer">{{ product.name }}</a>
+        <a
+          :href="product.product_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ product.name }}
+        </a>
       </h3>
       <p>
         {{ product.description }} 👉詳しくは
@@ -12,7 +18,9 @@
           :href="product.introduction_url"
           target="_blank"
           rel="noopener noreferrer"
-        >こちら</a>
+        >
+          こちら
+        </a>
       </p>
     </template>
   </main>

@@ -5,14 +5,16 @@
     <span class="description">Hello there! Welcome to my portfolio site.</span>
     <h2 class="heading">About me</h2>
     <p>
-      フリーランスエンジニア。主に Web のフロントエンドや、ブロックチェーン関連の技術に興味があります。
+      フリーランスエンジニア。主に Web
+      のフロントエンドや、ブロックチェーン関連の技術に興味があります。
       より詳しいプロフィールは
       <n-link to="/about">こちら</n-link>
     </p>
     <h2 class="heading">Skills</h2>
     <p>
       どちらかというとフロントエンド関連の技術が得意です。また、最近は
-      <span class="font-bold">Nuxt.js</span> を使った SPA 開発をすることが多いです。詳しくは
+      <span class="font-bold">Nuxt.js</span> を使った SPA
+      開発をすることが多いです。詳しくは
       <n-link to="/skills">こちら</n-link>
     </p>
     <h2 class="heading">Products</h2>
@@ -27,7 +29,9 @@
         href="https://booth.pm/ja/items/1978702"
         target="_blank"
         rel="noopener noreferrer"
-      >Vue 3 解体新書</a>
+      >
+        Vue 3 解体新書
+      </a>
     </p>
     <h2 class="heading">Accounts</h2>
     <div class="accounts">
@@ -38,12 +42,15 @@
         target="_blank"
         rel="noopener noreferrer"
         :style="`background: ${account.color}`"
-      >{{ account.name }}</a>
+      >
+        {{ account.name }}
+      </a>
     </div>
     <h2 class="heading">Contact</h2>
     <p>
       お問い合わせは
-      <n-link to="/contact">こちら</n-link>、もしくは Twitter の DM にて受け付けています。
+      <n-link to="/contact">こちら</n-link>、もしくは Twitter の DM
+      にて受け付けています。
     </p>
   </main>
 </template>

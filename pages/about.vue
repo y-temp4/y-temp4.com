@@ -6,8 +6,7 @@
       Web 開発の技術を学びました。
     </p>
     <p>
-      卒業後、ALIS
-      というブロックチェーン系のスタートアップにジョインしました。
+      卒業後、ALIS というブロックチェーン系のスタートアップにジョインしました。
     </p>
     <p>
       <span class="font-bold">入社したときに書いた記事：</span>
@@ -15,11 +14,12 @@
         href="https://medium.com/@alismedia/alis%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E7%B4%B9%E4%BB%8B7-%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E5%AF%BA%E5%B6%8B-f0856af30ce0"
         target="_blank"
         rel="noopener noreferrer"
-      >【ALISメンバー紹介7】エンジニア寺嶋 - ALIS - Medium</a>
+      >
+        【ALISメンバー紹介7】エンジニア寺嶋 - ALIS - Medium
+      </a>
     </p>
     <p>
-      その後、約 1 年で ALIS
-      を退職し、現在はフリーランスとして活動しています。
+      その後、約 1 年で ALIS を退職し、現在はフリーランスとして活動しています。
     </p>
     <p>
       <span class="font-bold">参考：</span>
@@ -27,7 +27,9 @@
         href="https://blog.y-temp4.com/entry/leave-alis"
         target="_blank"
         rel="noopener noreferrer"
-      >株式会社 ALIS を退職しました - Lorem ipsum</a>
+      >
+        株式会社 ALIS を退職しました - Lorem ipsum
+      </a>
     </p>
     <div class="heading">趣味など</div>
     <p>
@@ -36,7 +38,9 @@
         href="http://worldtrigger.info/"
         target="_blank"
         rel="noopener noreferrer"
-      >ワールドトリガー</a>
+      >
+        ワールドトリガー
+      </a>
       ということになっています。
     </p>
     <p>また、ミニマリストでもあり、ほぼ毎日同じ服を着て過ごしています。</p>
