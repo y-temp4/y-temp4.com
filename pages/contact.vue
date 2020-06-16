@@ -16,6 +16,7 @@
         本文：
         <textarea class="input" name="message" required></textarea>
       </label>
+      <div data-netlify-recaptcha="true" />
       <button class="button" type="submit">送信</button>
     </form>
   </main>
