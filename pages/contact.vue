@@ -1,7 +1,7 @@
 <template>
   <main>
     <h2 class="title">Contact</h2>
-    <form name="contact" method="POST" netlify>
+    <form name="contact" method="POST" netlify netlify-honeypot="text">
       <input type="hidden" name="form-name" value="contact" />
       <p class="warn-text">※入力項目はすべて必須です。</p>
       <label class="label">
@@ -12,11 +12,14 @@
         メールアドレス：
         <input class="input" type="email" name="email" required />
       </label>
+      <label class="label hide">
+        埋めないでね：
+        <input class="input" type="text" name="text" />
+      </label>
       <label class="label">
         本文：
         <textarea class="input" name="message" required></textarea>
       </label>
-      <div data-netlify-recaptcha="true" />
       <button class="button" type="submit">送信</button>
     </form>
   </main>
@@ -41,6 +44,10 @@ export default Vue.extend({
 
 .label {
   @apply mt-3 mb-1 inline-block w-full;
+
+  &.hide {
+    @apply hidden;
+  }
 }
 
 .input {
