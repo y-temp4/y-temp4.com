@@ -2,6 +2,7 @@ import { Configuration } from '@nuxt/types'
 
 const config: Configuration = {
   mode: 'universal',
+  target: 'static',
   head: {
     title: process.env.npm_package_name || '',
     titleTemplate: `%s - ${process.env.npm_package_name || ''}`,
