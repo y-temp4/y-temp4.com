@@ -9,11 +9,14 @@
     "generate": "nuxt-ts build && nuxt-ts export"
   },
   "dependencies": {
-    "@nuxt/typescript-build": "1.0.3",
-    "@nuxt/typescript-runtime": "0.4.10",
-    "@nuxtjs/pwa": "3.0.0-beta.20",
-    "@nuxtjs/tailwindcss": "2.0.0",
-    "nuxt": "2.13.0",
+    "@nuxt/typescript-build": "2.0.2",
+    "@nuxt/typescript-runtime": "1.0.0",
+    "@nuxtjs/pwa": "3.0.1",
+    "@nuxtjs/tailwindcss": "3.0.1",
+    "nuxt": "2.14.3",
     "open-color": "1.7.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "2.14.3"
   }
 }
