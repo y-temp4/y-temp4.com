@@ -2,19 +2,22 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/be7df1bf-16b1-49a4-945a-445d1a648258/deploy-status)](https://app.netlify.com/sites/y-temp4/deploys)
 
-> Portfolio site of y-temp4.
+> Portfolio site of [@y_temp4](https://twitter.com/y_temp4).
+
+## Stack
+
+- Nuxt.js
+- TypeScript
+- Tailwind CSS
+- Netlify
 
 ## Build Setup
 
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3333
-$ yarn dev
-
-# generate static project
-$ yarn generate
+$ yarn
+$ yarn dev # serve with hot reload at localhost:3333
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## License
+
+MIT
