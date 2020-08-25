@@ -1,7 +1,7 @@
 <template>
   <div class="default-container">
     <div class="wrapper container">
-      <n-link to="/">👈トップに戻る</n-link>
+      <n-link to="/">👈 トップに戻る</n-link>
       <nuxt />
     </div>
     <ToggleDarkModeButton />
@@ -13,6 +13,6 @@ import Vue from 'vue'
 import ToggleDarkModeButton from '~/components/ToggleDarkModeButton.vue'
 
 export default Vue.extend({
-  components: { ToggleDarkModeButton }
+  components: { ToggleDarkModeButton },
 })
 </script>

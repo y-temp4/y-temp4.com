@@ -52,8 +52,8 @@ export default Vue.extend({
         document.body.classList.add(DARK_THEME_CLASS)
         document.body.classList.remove(LIGHT_THEME_CLASS)
       }
-    }
-  }
+    },
+  },
 })
 </script>
 
@@ -67,7 +67,7 @@ export default Vue.extend({
 }
 
 .icon {
-  @apply select-none;
+  @apply select-none w-5 h-5;
 }
 
 .dark-theme {
