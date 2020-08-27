@@ -67,7 +67,7 @@ export default Vue.extend({
 }
 
 .icon {
-  @apply select-none w-5 h-5;
+  @apply select-none w-5 h-5 flex justify-center items-center;
 }
 
 .dark-theme {
