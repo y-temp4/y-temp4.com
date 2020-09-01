@@ -13,7 +13,7 @@
     "@nuxt/typescript-runtime": "1.0.0",
     "@nuxtjs/pwa": "3.0.1",
     "@nuxtjs/tailwindcss": "3.0.1",
-    "nuxt": "2.14.3",
+    "nuxt": "2.14.4",
     "open-color": "1.7.0"
   },
   "devDependencies": {
