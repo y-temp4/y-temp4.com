@@ -17,6 +17,6 @@
     "open-color": "1.7.0"
   },
   "devDependencies": {
-    "@nuxt/types": "2.14.3"
+    "@nuxt/types": "2.14.4"
   }
 }
