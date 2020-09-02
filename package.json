@@ -12,7 +12,7 @@
     "@nuxt/typescript-build": "2.0.2",
     "@nuxt/typescript-runtime": "1.0.0",
     "@nuxtjs/pwa": "3.0.2",
-    "@nuxtjs/tailwindcss": "3.0.1",
+    "@nuxtjs/tailwindcss": "3.0.2",
     "nuxt": "2.14.3",
     "open-color": "1.7.0"
   },
