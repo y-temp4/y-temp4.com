@@ -1,7 +1,6 @@
-import { Configuration } from '@nuxt/types'
+import { NuxtConfig } from '@nuxt/types'
 
-const config: Configuration = {
-  mode: 'universal',
+const config: NuxtConfig = {
   target: 'static',
   head: {
     title: process.env.npm_package_name || '',
