@@ -1,57 +1,66 @@
 <template>
-  <div class="toggle-darkmode-button" @click="toggleDarkMode">
-    <div class="icon">🌓</div>
+  <div v-if="!isLoading" class="toggle-darkmode-button" @click="toggleDarkMode">
+    <IconSun v-if="isDarkMode" class="icon text-gray-7" />
+    <IconMoon v-else class="icon text-white" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import IconSun from '~/components/IconSun.vue'
+import IconMoon from '~/components/IconMoon.vue'
 const LOCAL_STORAGE_DARKMODE_KEY = 'darkmode'
 const DARK_THEME_CLASS = 'dark-theme'
 const LIGHT_THEME_CLASS = 'light-theme'
 
 export default Vue.extend({
+  components: {
+    IconSun,
+    IconMoon,
+  },
+  data() {
+    return {
+      isDarkMode: false,
+      isLoading: true,
+    }
+  },
   mounted() {
     const isFirstAccess = !localStorage.getItem('darkmode')
-
     if (isFirstAccess) {
       const darkModeMediaQuery = window.matchMedia(
         '(prefers-color-scheme: dark)'
       )
-      const darkModeOn = darkModeMediaQuery.matches
-      if (darkModeOn) {
-        localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, 'on')
-        document.body.classList.add(DARK_THEME_CLASS)
-      } else {
-        localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, 'off')
-        document.body.classList.add(LIGHT_THEME_CLASS)
-      }
+      const isDarkMode = darkModeMediaQuery.matches
+      localStorage.setItem(
+        LOCAL_STORAGE_DARKMODE_KEY,
+        isDarkMode ? 'on' : 'off'
+      )
+      document.body.classList.add(
+        isDarkMode ? DARK_THEME_CLASS : LIGHT_THEME_CLASS
+      )
+      this.isDarkMode = isDarkMode
+      this.isLoading = false
       return
     }
-
-    const darkModeOnInLocalStorage =
+    const isDarkModeOnInLocalStorage =
       localStorage.getItem(LOCAL_STORAGE_DARKMODE_KEY) === 'on'
-
-    if (darkModeOnInLocalStorage) {
-      document.body.classList.add(DARK_THEME_CLASS)
-    } else {
-      document.body.classList.add(LIGHT_THEME_CLASS)
-    }
+    document.body.classList.add(
+      isDarkModeOnInLocalStorage ? DARK_THEME_CLASS : LIGHT_THEME_CLASS
+    )
+    this.isDarkMode = isDarkModeOnInLocalStorage
+    this.isLoading = false
   },
   methods: {
     toggleDarkMode() {
-      const darkModeOn = Array.from(document.body.classList).includes(
-        DARK_THEME_CLASS
+      const { classList } = document.body
+      const isDarkMode = Array.from(classList).includes(DARK_THEME_CLASS)
+      localStorage.setItem(
+        LOCAL_STORAGE_DARKMODE_KEY,
+        isDarkMode ? 'off' : 'on'
       )
-      if (darkModeOn) {
-        localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, 'off')
-        document.body.classList.remove(DARK_THEME_CLASS)
-        document.body.classList.add(LIGHT_THEME_CLASS)
-      } else {
-        localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, 'on')
-        document.body.classList.add(DARK_THEME_CLASS)
-        document.body.classList.remove(LIGHT_THEME_CLASS)
-      }
+      classList[isDarkMode ? 'remove' : 'add'](DARK_THEME_CLASS)
+      classList[isDarkMode ? 'add' : 'remove'](LIGHT_THEME_CLASS)
+      this.isDarkMode = !isDarkMode
     },
   },
 })
@@ -64,10 +73,16 @@ export default Vue.extend({
   height: 54px;
   bottom: 30px;
   right: 30px;
+
+  &:hover {
+    & .icon {
+      @apply text-blue-5;
+    }
+  }
 }
 
 .icon {
-  @apply select-none w-5 h-5 flex justify-center items-center;
+  @apply w-6 h-6 transition duration-200;
 }
 
 .dark-theme {
