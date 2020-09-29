@@ -23,5 +23,10 @@
     "name": "YouTube",
     "url": "https://www.youtube.com/channel/UCbeUc4_bzOwLGKnKeO_XBHg",
     "color": "#ff0000"
+  },
+  {
+    "name": "Zenn",
+    "url": "https://zenn.dev/yt4",
+    "color": "#3ea8ff"
   }
 ]
