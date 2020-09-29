@@ -1,11 +1,9 @@
 const openColors = require('open-color/open-color.json')
 
-const colors = {}
-
-Object.entries(openColors).forEach(([color, values]) => {
-  if (['white', 'black'].includes(color)) return
-  colors[color] = { ...values }
-})
+const colors = Object.entries(openColors).reduce((acc, [color, values]) => {
+  if (['white', 'black'].includes(color)) return acc
+  return { ...acc, [color]: { ...values } }
+}, {})
 
 module.exports = {
   theme: {
@@ -23,7 +21,8 @@ module.exports = {
     }
   },
   future: {
-    removeDeprecatedGapUtilities: true
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true
   },
   purge: {
     enabled: process.env.NODE_ENV === 'production',
