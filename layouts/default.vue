@@ -13,6 +13,6 @@ import Vue from 'vue'
 import ToggleDarkModeButton from '~/components/ToggleDarkModeButton.vue'
 
 export default Vue.extend({
-  components: { ToggleDarkModeButton },
+  components: { ToggleDarkModeButton }
 })
 </script>

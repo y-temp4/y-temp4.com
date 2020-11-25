@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="main-content">
     <img src="~/assets/images/me.jpeg" alt="y-temp4" class="icon" />
     <span class="name">Yuki Terashima</span>
     <span class="description">Hello there! Welcome to my portfolio site.</span>
@@ -76,6 +76,10 @@ export default Vue.extend({
 
 <style lang="postcss" scoped>
 @import '~/assets/css/title.pcss';
+
+.main-content {
+  @apply flex items-center flex-col;
+}
 
 .icon {
   @apply rounded-full w-32 h-32 border-white border-4;
