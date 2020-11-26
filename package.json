@@ -14,7 +14,7 @@
     "@nuxtjs/pwa": "3.2.2",
     "@nuxtjs/tailwindcss": "3.2.0",
     "nuxt": "2.14.7",
-    "open-color": "1.7.0"
+    "open-color": "git+https://github.com/y-temp4/open-color.git"
   },
   "devDependencies": {
     "@nuxt/types": "2.14.7"
