@@ -86,11 +86,11 @@ body {
 }
 
 .default-container {
-  @apply p-6 pb-16;
+  @apply p-4 pb-16;
 }
 
 .wrapper {
-  @apply mx-auto max-w-2xl p-6 bg-wrapper;
+  @apply mx-auto max-w-2xl p-4 pb-2 bg-wrapper;
 }
 
 a {
@@ -103,4 +103,14 @@ a {
 
 p {
   @apply w-full my-2;
+}
+
+@screen sm {
+  .default-container {
+    @apply p-6;
+  }
+
+  .wrapper {
+    @apply p-8 pb-5;
+  }
 }
