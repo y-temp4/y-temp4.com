@@ -28,7 +28,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        株式会社 ALIS を退職しました - Lorem ipsum
+        株式会社 ALIS を退職しました
       </a>
     </p>
     <div class="heading">趣味など</div>
