@@ -7,20 +7,19 @@
     <p>
       フリーランスエンジニア。主に Web
       のフロントエンドや、ブロックチェーン関連の技術に興味があります。
-      より詳しいプロフィールは
-      <n-link to="/about">こちら</n-link>
+      <n-link to="/about">より詳しいプロフィール</n-link>
     </p>
     <h2 class="heading">Skills</h2>
     <p>
       どちらかというとフロントエンド関連の技術が得意です。また、最近は
       <span class="font-bold">Nuxt.js</span> を使った SPA
-      開発をすることが多いです。詳しくは
-      <n-link to="/skills">こちら</n-link>
+      開発をすることが多いです。
+      <n-link to="/skills">その他に触れたことがある技術</n-link>
     </p>
     <h2 class="heading">Products</h2>
     <p>
-      個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。詳しくは
-      <n-link to="/products">こちら</n-link>
+      個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。
+      <n-link to="/products">作ってきたサービスの一覧</n-link>
     </p>
     <h2 class="heading">Works</h2>
     <p>
@@ -48,8 +47,13 @@
     </div>
     <h2 class="heading">Contact</h2>
     <p>
-      お問い合わせは
-      <n-link to="/contact">こちら</n-link>、もしくは Twitter の DM
+      <n-link to="/contact">お問い合わせページ</n-link>、もしくは
+      <a
+        href="https://twitter.com/messages/compose?recipient_id=3268293518"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Twitter の DM</a
+      >
       にて受け付けています。
     </p>
   </main>
