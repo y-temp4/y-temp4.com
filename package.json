@@ -17,6 +17,6 @@
     "open-color": "git+https://github.com/y-temp4/open-color.git"
   },
   "devDependencies": {
-    "@nuxt/types": "2.14.7"
+    "@nuxt/types": "2.14.12"
   }
 }
