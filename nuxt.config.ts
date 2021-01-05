@@ -19,7 +19,8 @@ const config: NuxtConfig = {
         property: 'og:image',
         content: 'https://y-temp4.com/icon.png'
       },
-      { name: 'theme-color', content: '#339af0' }
+      { name: 'theme-color', content: '#339af0' },
+      { name: 'twitter:site', content: '@y_temp4' }
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
   },
