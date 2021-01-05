@@ -28,6 +28,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
 import products from '~/data/products.json'
 
 export default Vue.extend({
@@ -36,8 +37,12 @@ export default Vue.extend({
       products
     }
   },
-  head: {
-    title: 'Products'
+  head(): MetaInfo {
+    const title = 'Products'
+    return {
+      title,
+      meta: [{ hid: 'og:title', property: 'og:title', content: title }]
+    }
   }
 })
 </script>

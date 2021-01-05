@@ -23,6 +23,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
 import skills from '~/data/skills.json'
 
 export default Vue.extend({
@@ -34,8 +35,12 @@ export default Vue.extend({
       return skills.filter(skill => skill.level === 'hobby')
     }
   },
-  head: {
-    title: 'Skills'
+  head(): MetaInfo {
+    const title = 'Skills'
+    return {
+      title,
+      meta: [{ hid: 'og:title', property: 'og:title', content: title }]
+    }
   }
 })
 </script>

@@ -67,9 +67,15 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
+
 export default Vue.extend({
-  head: {
-    title: 'About me'
+  head(): MetaInfo {
+    const title = 'About me'
+    return {
+      title,
+      meta: [{ hid: 'og:title', property: 'og:title', content: title }]
+    }
   }
 })
 </script>
