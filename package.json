@@ -11,9 +11,9 @@
     "ncu:prd": "yarn ncu --dep prod -u"
   },
   "dependencies": {
-    "@nuxt/typescript-build": "2.0.3",
-    "@nuxt/typescript-runtime": "2.0.0",
-    "@nuxtjs/pwa": "3.3.3",
+    "@nuxt/typescript-build": "2.0.4",
+    "@nuxt/typescript-runtime": "2.0.1",
+    "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/tailwindcss": "3.4.2",
     "nuxt": "2.14.12",
     "open-color": "git+https://github.com/y-temp4/open-color.git"
