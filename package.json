@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "PORT=3333 nuxt-ts",
-    "generate": "nuxt-ts generate"
+    "generate": "nuxt-ts generate",
+    "ncu:dev": "yarn ncu --dep dev -u",
+    "ncu:prd": "yarn ncu --dep prod -u"
   },
   "dependencies": {
     "@nuxt/typescript-build": "2.0.3",
@@ -17,6 +19,7 @@
     "open-color": "git+https://github.com/y-temp4/open-color.git"
   },
   "devDependencies": {
-    "@nuxt/types": "2.14.12"
+    "@nuxt/types": "2.14.12",
+    "npm-check-updates": "11.1.3"
   }
 }
