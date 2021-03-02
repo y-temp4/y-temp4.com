@@ -5,17 +5,16 @@
   "author": "y-temp4",
   "private": true,
   "scripts": {
-    "dev": "PORT=3333 nuxt-ts",
-    "generate": "nuxt-ts generate",
+    "dev": "PORT=3333 nuxt",
+    "generate": "nuxt generate",
     "ncu:dev": "yarn ncu --dep dev -u",
     "ncu:prd": "yarn ncu --dep prod -u"
   },
   "dependencies": {
-    "@nuxt/typescript-build": "2.0.4",
-    "@nuxt/typescript-runtime": "2.0.1",
+    "@nuxt/typescript-build": "2.0.6",
     "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/tailwindcss": "3.4.2",
-    "nuxt": "2.15.0",
+    "nuxt": "2.15.2",
     "open-color": "git+https://github.com/y-temp4/open-color.git"
   },
   "devDependencies": {
