@@ -1239,10 +1239,10 @@
     rc9 "^1.2.0"
     std-env "^2.2.1"
 
-"@nuxt/types@2.15.0":
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-2.15.0.tgz#991a9259eccf2782598830c247b3984b020d4718"
-  integrity sha512-bMOmp9aEr0/2pOE+JP4/d0ywvPICUglZpwzgdJHwoRgQTehvAocAtcG2dRvdHrsQR8iX1wgrFAkdYuxrLpGfsg==
+"@nuxt/types@2.15.2":
+  version "2.15.2"
+  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-2.15.2.tgz#040b2cf96b0fad86baccead95721b4e28444613f"
+  integrity sha512-X7fZDhuSMhkhVt1XCODby1Pmog9Tf5LNzKGkFmQ/PxlK4lbJXivsosXWgOzmDkDW4TXxv6+LvXEbN1h8VQmzOQ==
   dependencies:
     "@types/autoprefixer" "^9.7.2"
     "@types/babel__core" "^7.1.12"
@@ -1252,7 +1252,7 @@
     "@types/file-loader" "^4.2.0"
     "@types/html-minifier" "^4.0.0"
     "@types/less" "^3.0.2"
-    "@types/node" "^12.20.1"
+    "@types/node" "^12.20.4"
     "@types/optimize-css-assets-webpack-plugin" "^5.0.2"
     "@types/pug" "^2.0.4"
     "@types/sass" "^1.16.0"
@@ -1606,10 +1606,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.10.tgz#5958a82e41863cfc71f2307b3748e3491ba03785"
   integrity sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
 
-"@types/node@^12.20.1":
-  version "12.20.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.3.tgz#fbabde59d96c23a80e337ca6a71b464da2a0a824"
-  integrity sha512-63cSd8J30Sr4/aFKKfDmCEM4GMH3W2efWT0Ii/B+Ohm3id0TU2xPEBFktiq3nXCZcN6VwVvpyv75I4zTP7YO/w==
+"@types/node@^12.20.4":
+  version "12.20.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.4.tgz#73687043dd00fcb6962c60fbf499553a24d6bdf2"
+  integrity sha512-xRCgeE0Q4pT5UZ189TJ3SpYuX/QGl6QIAOAIeDSbAVAd2gX1NxSZup4jNVK7cxIeP8KDSbJgcckun495isP1jQ==
 
 "@types/optimize-css-assets-webpack-plugin@^5.0.2":
   version "5.0.2"
@@ -2957,13 +2957,12 @@ cli-cursor@^3.1.0:
   dependencies:
     restore-cursor "^3.1.0"
 
-cli-table@^0.3.4:
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/cli-table/-/cli-table-0.3.4.tgz#5b37fd723751f1a6e9e70d55953a75e16eab958e"
-  integrity sha512-1vinpnX/ZERcmE443i3SZTmU5DF0rPO9DrL4I2iVAllhxzCM9SzPlHnz19fsZB78htkKZvYBvj6SZ6vXnaxmTA==
+cli-table@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/cli-table/-/cli-table-0.3.5.tgz#643508c1d6b6e7b02c82c18afd5fcc8b6dab3ca6"
+  integrity sha512-7uo2+RMNQUZ13M199udxqwk1qxTOS53EUak4gmu/aioUpdH5RvBz0JkJslcWz6ABKedZNqXXzikMZgHh+qF16A==
   dependencies:
-    chalk "^2.4.1"
-    string-width "^4.2.0"
+    colors "1.0.3"
 
 cli-width@^3.0.0:
   version "3.0.0"
@@ -3066,6 +3065,11 @@ colorette@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.1.tgz#4d0b921325c14faf92633086a536db6e89564b1b"
   integrity sha512-puCDz0CzydiSYOrnXpz/PKd69zRrribezjtE9yd4zvytoRc8+RY/KJPvtPFKZS3E3wP6neGyMe0vOTlHO5L3Pw==
+
+colors@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
+  integrity sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs=
 
 combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.8"
@@ -5899,6 +5903,11 @@ lodash@^4.15.0, lodash@^4.17.14, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 lower-case@^1.1.1:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
@@ -6548,14 +6557,14 @@ npm-bundled@^1.1.1:
   dependencies:
     npm-normalize-package-bin "^1.0.1"
 
-npm-check-updates@11.1.4:
-  version "11.1.4"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-11.1.4.tgz#e391899490b2ac895172b44ded78b2816109d3fe"
-  integrity sha512-jq1KAfYcbeFWBLyRj7YT5rwQ3paInsqukeawlwfUdnvmgxKb5uFpd7km/ghPjxAQWVvIecvsYJX0FCHWk4j/iA==
+npm-check-updates@11.1.10:
+  version "11.1.10"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-11.1.10.tgz#16d26ada331546e15c918f5181a323dd6d5a9dc2"
+  integrity sha512-T8o/3ls74Q8i3LbO9jjxI1YWA9ioJjjAnYt9BezbFn/D99STc+7pe633H0gLmNi4/5b1Xi3nlbI6UCbc6eb/pQ==
   dependencies:
     chalk "^4.1.0"
     cint "^8.2.1"
-    cli-table "^0.3.4"
+    cli-table "^0.3.5"
     commander "^6.2.1"
     find-up "5.0.0"
     fp-and-or "^0.1.3"
@@ -6565,10 +6574,10 @@ npm-check-updates@11.1.4:
     json-parse-helpfulerror "^1.0.3"
     jsonlines "^0.1.1"
     libnpmconfig "^1.2.1"
-    lodash "^4.17.20"
+    lodash "^4.17.21"
     mem "^8.0.0"
     p-map "^4.0.0"
-    pacote "^11.2.3"
+    pacote "^11.2.7"
     parse-github-url "^1.0.2"
     progress "^2.0.3"
     prompts "^2.4.0"
@@ -6898,10 +6907,10 @@ package-json@^6.3.0:
     registry-url "^5.0.0"
     semver "^6.2.0"
 
-pacote@^11.2.3:
-  version "11.2.6"
-  resolved "https://registry.yarnpkg.com/pacote/-/pacote-11.2.6.tgz#c0426e5d5c8d33aeea3461a75e1390f1ba78f953"
-  integrity sha512-xCl++Hb3aBC7LaWMimbO4xUqZVsEbKDVc6KKDIIyAeBYrmMwY1yJC2nES/lsGd8sdQLUosgBxQyuVNncZ2Ru0w==
+pacote@^11.2.7:
+  version "11.2.7"
+  resolved "https://registry.yarnpkg.com/pacote/-/pacote-11.2.7.tgz#a44a9d40d4feac524e9ce78d77e2b390181d8afc"
+  integrity sha512-ogxPor11v/rnU9ukwLlI2dPx22q9iob1+yZyqSwerKsOvBMhU9e+SJHtxY4y2N0MRH4/5jGsGiRLsZeJWyM4dQ==
   dependencies:
     "@npmcli/git" "^2.0.1"
     "@npmcli/installed-package-contents" "^1.0.6"
