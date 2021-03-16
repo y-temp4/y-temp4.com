@@ -91,7 +91,7 @@ export default Vue.extend({
 }
 
 .name {
-  @apply text-3xl font-bold mt-2 text-center whitespace-no-wrap;
+  @apply text-3xl font-bold mt-2 text-center whitespace-nowrap;
 }
 
 .description {
