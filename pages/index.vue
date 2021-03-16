@@ -36,6 +36,7 @@
     <div class="accounts">
       <a
         v-for="account in accounts"
+        :key="account.name"
         :href="account.url"
         class="account"
         target="_blank"
