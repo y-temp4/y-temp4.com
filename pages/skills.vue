@@ -46,8 +46,6 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-@import '~/assets/css/title.pcss';
-
 .heading {
   @apply text-xl text-left w-full font-bold mt-5 mb-1;
 }

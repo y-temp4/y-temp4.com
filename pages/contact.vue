@@ -41,8 +41,6 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-@import '~/assets/css/title.pcss';
-
 .warn-text {
   @apply text-warn font-bold;
 }
