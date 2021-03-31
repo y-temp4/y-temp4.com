@@ -1,5 +1,17 @@
 import { NuxtConfig } from '@nuxt/types'
 
+const isProduction = process.env.NODE_ENV === 'production'
+
+const script = []
+
+if (isProduction) {
+  script.push({
+    src: 'https://static.cloudflareinsights.com/beacon.min.js',
+    defer: true,
+    'data-cf-beacon': '{"token": "102eea8f71994077a8e5453a190fe9c3"}'
+  })
+}
+
 const config: NuxtConfig = {
   target: 'static',
   head: {
@@ -22,7 +34,8 @@ const config: NuxtConfig = {
       { name: 'theme-color', content: '#339af0' },
       { name: 'twitter:site', content: '@y_temp4' }
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
+    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    script
   },
   loading: { color: '#339af0' },
   css: ['~/assets/css/style.pcss'],
