@@ -20,6 +20,6 @@
   "devDependencies": {
     "@nuxt/types": "2.15.3",
     "npm-check-updates": "11.3.0",
-    "postcss": "8.2.8"
+    "postcss": "8.2.9"
   }
 }
