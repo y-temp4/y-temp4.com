@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h2 class="title">Contact</h2>
+    <MainHeading>Contact</MainHeading>
     <form name="contact" method="POST" netlify netlify-honeypot="text">
       <input type="hidden" name="form-name" value="contact" />
       <p class="warn-text">※入力項目はすべて必須です。</p>
@@ -28,8 +28,10 @@
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
+import MainHeading from '~/components/MainHeading.vue'
 
 export default Vue.extend({
+  components: { MainHeading },
   head(): MetaInfo {
     const title = 'Contact'
     return {
@@ -41,8 +43,6 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-@import '~/assets/css/title.pcss';
-
 .warn-text {
   @apply text-warn font-bold;
 }

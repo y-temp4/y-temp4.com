@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h2 class="title">Skills</h2>
+    <MainHeading>Skills</MainHeading>
     <p>これまでに触れたことのある技術を雑にまとめたものです。</p>
     <h3 class="heading">実務経験があるもの</h3>
     <p>
@@ -24,9 +24,11 @@
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
+import MainHeading from '~/components/MainHeading.vue'
 import skills from '~/data/skills.json'
 
 export default Vue.extend({
+  components: { MainHeading },
   computed: {
     workSkills() {
       return skills.filter(skill => skill.level === 'work')
@@ -46,8 +48,6 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-@import '~/assets/css/title.pcss';
-
 .heading {
   @apply text-xl text-left w-full font-bold mt-5 mb-1;
 }

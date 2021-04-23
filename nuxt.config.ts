@@ -43,6 +43,7 @@ const config: NuxtConfig = {
   modules: ['@nuxtjs/pwa'],
   manifest: { lang: 'ja' },
   generate: { fallback: true }
+  // tailwindcss: { jit: true }
 }
 
 export default config

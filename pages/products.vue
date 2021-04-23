@@ -1,8 +1,8 @@
 <template>
   <main>
-    <h2 class="title">Products</h2>
+    <MainHeading>Products</MainHeading>
     <p>これまでに作ったサービスの一覧です。</p>
-    <template v-for="product in products">
+    <div v-for="product in products" :key="product.name">
       <h3 class="product-name">
         <a
           :href="product.product_url"
@@ -13,25 +13,27 @@
         </a>
       </h3>
       <p>
-        {{ product.description }} 👉詳しくは
+        {{ product.description }} 👉
         <a
           :href="product.introduction_url"
           target="_blank"
           rel="noopener noreferrer"
         >
-          こちら
+          詳細はこちら
         </a>
       </p>
-    </template>
+    </div>
   </main>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
+import MainHeading from '~/components/MainHeading.vue'
 import products from '~/data/products.json'
 
 export default Vue.extend({
+  components: { MainHeading },
   data() {
     return {
       products
@@ -48,8 +50,6 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-@import '~/assets/css/title.pcss';
-
 .product-name {
   @apply text-xl text-left w-full font-bold mt-5 mb-1;
 }

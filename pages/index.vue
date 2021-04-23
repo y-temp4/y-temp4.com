@@ -3,25 +3,25 @@
     <img src="~/assets/images/me.jpeg" alt="y-temp4" class="icon" />
     <span class="name">Yuki Terashima</span>
     <span class="description">Hello there! Welcome to my portfolio site.</span>
-    <h2 class="heading">About me</h2>
+    <MainHeading class="heading">About me</MainHeading>
     <p>
       フリーランスエンジニア。主に Web
       のフロントエンドや、ブロックチェーン関連の技術に興味があります。
       <n-link to="/about">より詳しいプロフィール</n-link>
     </p>
-    <h2 class="heading">Skills</h2>
+    <MainHeading class="heading">Skills</MainHeading>
     <p>
       どちらかというとフロントエンド関連の技術が得意です。また、最近は
       <span class="font-bold">Nuxt.js</span> を使った SPA
       開発をすることが多いです。
       <n-link to="/skills">その他に触れたことがある技術</n-link>
     </p>
-    <h2 class="heading">Products</h2>
+    <MainHeading class="heading">Products</MainHeading>
     <p>
       個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。
       <n-link to="/products">作ってきたサービスの一覧</n-link>
     </p>
-    <h2 class="heading">Works</h2>
+    <MainHeading class="heading">Works</MainHeading>
     <p>
       共著で Vue 3 についての技術書を執筆しました。
       <a
@@ -32,7 +32,7 @@
         Vue 3 解体新書
       </a>
     </p>
-    <h2 class="heading">Accounts</h2>
+    <MainHeading class="heading">Accounts</MainHeading>
     <div class="accounts">
       <a
         v-for="account in accounts"
@@ -46,7 +46,7 @@
         {{ account.name }}
       </a>
     </div>
-    <h2 class="heading">Contact</h2>
+    <MainHeading class="heading">Contact</MainHeading>
     <p>
       <n-link to="/contact">お問い合わせページ</n-link>、もしくは
       <a
@@ -62,11 +62,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import MainHeading from '~/components/MainHeading.vue'
 import skills from '~/data/skills.json'
 import accounts from '~/data/accounts.json'
 
 export default Vue.extend({
   layout: 'home',
+  components: { MainHeading },
   data() {
     return {
       skills,
@@ -80,8 +82,6 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-@import '~/assets/css/title.pcss';
-
 .main-content {
   @apply flex items-center flex-col;
 }
@@ -123,7 +123,7 @@ export default Vue.extend({
 }
 
 .heading {
-  @apply title mt-3 mb-1;
+  @apply mt-3 mb-1;
 }
 
 .accounts {

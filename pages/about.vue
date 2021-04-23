@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h2 class="title">About me</h2>
+    <MainHeading>About me</MainHeading>
     <p>
       1994 年生まれ。大学は情報系の学部で、学生時代は課外活動と個人開発を通じて
       Web 開発の技術を学びました。
@@ -68,8 +68,10 @@
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
+import MainHeading from '~/components/MainHeading.vue'
 
 export default Vue.extend({
+  components: { MainHeading },
   head(): MetaInfo {
     const title = 'About me'
     return {
@@ -81,8 +83,6 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-@import '~/assets/css/title.pcss';
-
 .heading {
   @apply text-xl text-left w-full font-bold mt-5 mb-1;
 }
