@@ -13,13 +13,13 @@
   "dependencies": {
     "@nuxt/typescript-build": "2.1.0",
     "@nuxtjs/pwa": "3.3.5",
-    "@nuxtjs/tailwindcss": "4.0.1",
-    "nuxt": "2.15.3",
+    "@nuxtjs/tailwindcss": "4.0.3",
+    "nuxt": "2.15.4",
     "open-color": "git+https://github.com/y-temp4/open-color.git"
   },
   "devDependencies": {
-    "@nuxt/types": "2.15.3",
-    "npm-check-updates": "11.3.0",
-    "postcss": "8.2.8"
+    "@nuxt/types": "2.15.4",
+    "npm-check-updates": "11.5.1",
+    "postcss": "8.2.12"
   }
 }
