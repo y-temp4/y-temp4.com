@@ -42,8 +42,8 @@ const config: NuxtConfig = {
   buildModules: ['@nuxtjs/tailwindcss', '@nuxt/typescript-build'],
   modules: ['@nuxtjs/pwa'],
   manifest: { lang: 'ja' },
-  generate: { fallback: true }
-  // tailwindcss: { jit: true }
+  generate: { fallback: true },
+  tailwindcss: { jit: true }
 }
 
 export default config
