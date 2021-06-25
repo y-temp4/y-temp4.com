@@ -1,0 +1,27 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@nuxt/types"
+    versions:
+    - 2.15.4
+  - dependency-name: postcss
+    versions:
+    - 8.2.9
+  - dependency-name: nuxt
+    versions:
+    - 2.15.4
+  - dependency-name: "@nuxt/typescript-runtime"
+    versions:
+    - 2.0.1
+  - dependency-name: "@nuxtjs/pwa"
+    versions:
+    - 3.3.5
+  - dependency-name: "@nuxt/typescript-build"
+    versions:
+    - 2.0.4
