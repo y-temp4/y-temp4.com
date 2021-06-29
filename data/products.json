@@ -1,7 +1,13 @@
 [
   {
+    "name": "べじはっく",
+    "product_url": "https://vghack.com",
+    "description": "(完全)菜食主義に興味がある方向けの質問サイト",
+    "introduction_url": "https://blog.y-temp4.com/entry/vghack"
+  },
+  {
     "name": "自己省察テスト",
-    "product_url": "https://pvcs.y-temp4.com/",
+    "product_url": "https://pvcs.y-temp4.com",
     "description": "自分の価値観を見直すためのサービス",
     "introduction_url": "https://blog.y-temp4.com/entry/personal-values-card-sort-tech-stack"
   },
