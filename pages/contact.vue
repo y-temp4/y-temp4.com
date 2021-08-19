@@ -64,7 +64,7 @@ export default Vue.extend({
 }
 
 .button {
-  @apply bg-blue-5 text-white font-bold py-2 px-4 rounded mt-2;
+  @apply bg-blue-5 text-white font-bold py-2 px-4 rounded my-2;
 
   &:hover {
     @apply bg-blue-7;
