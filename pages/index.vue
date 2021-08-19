@@ -63,7 +63,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import MainHeading from '~/components/MainHeading.vue'
-import skills from '~/data/skills.json'
 import accounts from '~/data/accounts.json'
 
 export default Vue.extend({
@@ -71,7 +70,6 @@ export default Vue.extend({
   components: { MainHeading },
   data() {
     return {
-      skills,
       accounts
     }
   },
