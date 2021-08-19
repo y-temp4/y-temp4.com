@@ -84,6 +84,6 @@ export default Vue.extend({
 
 <style lang="postcss" scoped>
 .heading {
-  @apply text-xl text-left w-full font-bold mt-5 mb-1;
+  @apply text-xl text-left w-full font-bold mt-8 mb-1;
 }
 </style>
