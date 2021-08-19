@@ -54,7 +54,7 @@ export default Vue.extend({
         'Nuxt.js',
         'TypeScript'
       ]
-      return mostInterestedSkills.join(', ')
+      return mostInterestedSkills.join('、')
     }
   },
   head(): MetaInfo {
