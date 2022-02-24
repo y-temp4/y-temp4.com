@@ -11,8 +11,9 @@
     </p>
     <MainHeading class="heading">Skills</MainHeading>
     <p>
-      どちらかというとフロントエンド関連の技術が得意です。また、最近は
-      <span class="font-bold">Nuxt.js</span> を使った SPA
+      Web のフロントエンド関連の技術が得意です。また、最近は
+      <span class="font-bold">Nuxt.js</span> や
+      <span class="font-bold">Next.js</span> を使った SPA
       開発をすることが多いです。
       <n-link to="/skills">その他に触れたことがある技術</n-link>
     </p>
@@ -22,16 +23,28 @@
       <n-link to="/products">作ってきたサービスの一覧</n-link>
     </p>
     <MainHeading class="heading">Works</MainHeading>
-    <p>
-      共著で Vue 3 についての技術書を執筆しました。
-      <a
-        href="https://booth.pm/ja/items/1978702"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Vue 3 解体新書
-      </a>
-    </p>
+    <ul class="list-disc self-start ml-5 mt-2">
+      <li>
+        共著で Vue 3 についての技術書を執筆しました。
+        <a
+          href="https://booth.pm/ja/items/1978702"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Vue 3 解体新書
+        </a>
+      </li>
+      <li>
+        共著で個人開発しているサービスについての書籍を執筆しました。
+        <a
+          href="https://booth.pm/ja/items/2381283"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          個人Webサービスシステム構成事典
+        </a>
+      </li>
+    </ul>
     <MainHeading class="heading">Accounts</MainHeading>
     <div class="accounts">
       <a
@@ -128,7 +141,7 @@ export default Vue.extend({
   @apply flex flex-row flex-wrap w-full mb-2;
 
   & .account {
-    @apply px-4 py-2 mr-3 mt-2 block rounded-lg text-white text-center font-bold no-underline border-white border-2;
+    @apply px-4 py-1 mr-3 mt-2 block rounded-lg text-white text-center font-bold no-underline border-white border-2;
 
     &:hover {
       @apply opacity-75;

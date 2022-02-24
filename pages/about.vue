@@ -3,10 +3,8 @@
     <MainHeading>About me</MainHeading>
     <p>
       1994 年生まれ。大学は情報系の学部で、学生時代は課外活動と個人開発を通じて
-      Web 開発の技術を学びました。
-    </p>
-    <p>
-      卒業後、ALIS というブロックチェーン系のスタートアップにジョインしました。
+      Web 開発の技術を学びました。卒業後、ALIS
+      というブロックチェーン系のスタートアップにジョインしました。
     </p>
     <p>
       <span class="font-bold">入社したときに書いた記事：</span>
@@ -31,6 +29,21 @@
         株式会社 ALIS を退職しました
       </a>
     </p>
+    <p>
+      具体的な仕事内容は 「<a
+        href="https://blog.y-temp4.com/entry/recent-work-on-nuxtjs-2020"
+        target="_blank"
+        rel="noopener noreferrer"
+        >最近のNuxt.js関係の仕事内容</a
+      >」にまとめています。また、現在は副業で
+      <a
+        href="https://techbowl.co.jp/techtrain/mentors/65"
+        target="_blank"
+        rel="noopener noreferrer"
+        >TechTrainのメンター</a
+      >
+      も行っています。
+    </p>
     <h3 class="heading">趣味など</h3>
     <p>
       上記メンバー紹介の記事にも書いていますが、マンガを読むのが好きでよく読んでいます。一番好きなマンガは
@@ -53,7 +66,7 @@
     <p>
       普段は以下の ID で活動していることが多いです。
     </p>
-    <ul class="list-disc ml-6">
+    <ul class="ul">
       <li>y_temp4</li>
       <li>y-temp4</li>
       <li>yt4</li>
@@ -85,5 +98,9 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .heading {
   @apply text-xl text-left w-full font-bold mt-8 mb-1;
+}
+
+.ul {
+  @apply list-disc ml-6;
 }
 </style>
