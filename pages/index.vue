@@ -76,18 +76,19 @@
 <script lang="ts">
 import Vue from 'vue'
 import MainHeading from '~/components/MainHeading.vue'
-import accounts from '~/data/accounts.json'
+import { accounts } from '~/data/accounts'
+import type { Account } from '~/data/accounts'
 
 export default Vue.extend({
   layout: 'home',
   components: { MainHeading },
-  data() {
-    return {
-      accounts
-    }
-  },
   head: {
     titleTemplate: ''
+  },
+  computed: {
+    accounts(): Account[] {
+      return accounts
+    }
   }
 })
 </script>
