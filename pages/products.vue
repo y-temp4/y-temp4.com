@@ -45,14 +45,14 @@ export default Vue.extend({
   components: { MainHeading },
   data() {
     return {
-      showSuspendedProducts: false
+      showSuspendedProducts: false,
     }
   },
   head(): MetaInfo {
     const title = 'Products'
     return {
       title,
-      meta: [{ hid: 'og:title', property: 'og:title', content: title }]
+      meta: [{ hid: 'og:title', property: 'og:title', content: title }],
     }
   },
   computed: {
@@ -60,9 +60,9 @@ export default Vue.extend({
       if (this.showSuspendedProducts) {
         return products
       }
-      return products.filter(p => !p.suspended)
-    }
-  }
+      return products.filter((p) => !p.suspended)
+    },
+  },
 })
 </script>
 
@@ -72,7 +72,7 @@ export default Vue.extend({
 }
 
 .product-name {
-  @apply text-xl text-left w-full font-bold mt-5 mb-1 flex items-center gap-2;
+  @apply text-xl text-left w-full font-bold mt-6 mb-1 flex items-center gap-2;
 }
 
 .product-suspended-label {

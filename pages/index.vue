@@ -83,13 +83,13 @@ export default Vue.extend({
   layout: 'home',
   components: { MainHeading },
   head: {
-    titleTemplate: ''
+    titleTemplate: '',
   },
   computed: {
     accounts(): Account[] {
       return accounts
-    }
-  }
+    },
+  },
 })
 </script>
 

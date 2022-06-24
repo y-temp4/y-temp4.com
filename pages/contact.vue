@@ -36,9 +36,9 @@ export default Vue.extend({
     const title = 'Contact'
     return {
       title,
-      meta: [{ hid: 'og:title', property: 'og:title', content: title }]
+      meta: [{ hid: 'og:title', property: 'og:title', content: title }],
     }
-  }
+  },
 })
 </script>
 
