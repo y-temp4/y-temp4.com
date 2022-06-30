@@ -1,13 +1,7 @@
 <template>
   <main>
     <MainHeading>Contact</MainHeading>
-    <form
-      name="contact"
-      method="POST"
-      netlify
-      netlify-honeypot="text"
-      data-netlify-recaptcha="true"
-    >
+    <form name="contact" method="POST" netlify netlify-honeypot="text">
       <input type="hidden" name="form-name" value="contact" />
       <p class="warn-text">※入力項目はすべて必須です。</p>
       <label class="label">
@@ -26,7 +20,6 @@
         本文：
         <textarea class="input" name="message" required></textarea>
       </label>
-      <div data-netlify-recaptcha="true"></div>
       <button class="button" type="submit">送信</button>
     </form>
   </main>
