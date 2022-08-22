@@ -16,9 +16,7 @@
         【ALISメンバー紹介7】エンジニア寺嶋 - ALIS - Medium
       </a>
     </p>
-    <p>
-      その後、約 1 年で ALIS を退職し、現在はフリーランスとして活動しています。
-    </p>
+    <p> その後、約 1 年で ALIS を退職し、フリーランスとして独立。 </p>
     <p>
       <span class="font-bold">参考：</span>
       <a
@@ -27,6 +25,23 @@
         rel="noopener noreferrer"
       >
         株式会社 ALIS を退職しました
+      </a>
+    </p>
+    <p>
+      2022年8月に
+      <a href="https://typebase.dev/" target="_blank" rel="noopener noreferrer"
+        >株式会社Typebase</a
+      >
+      を創業しました。
+    </p>
+    <p>
+      <span class="font-bold">参考：</span>
+      <a
+        href="https://zenn.dev/typebase/articles/founded-typebase-inc"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        株式会社Typebaseを創業しました
       </a>
     </p>
     <p>
@@ -63,9 +78,7 @@
       苦手なものはタバコ、時間を守らない人、瓜系の野菜・果物（きゅうり、スイカなど）です。
     </p>
     <h3 class="heading">ID について</h3>
-    <p>
-      普段は以下の ID で活動していることが多いです。
-    </p>
+    <p> 普段は以下の ID で活動していることが多いです。 </p>
     <ul class="ul">
       <li>y_temp4</li>
       <li>y-temp4</li>
@@ -89,9 +102,9 @@ export default Vue.extend({
     const title = 'About me'
     return {
       title,
-      meta: [{ hid: 'og:title', property: 'og:title', content: title }]
+      meta: [{ hid: 'og:title', property: 'og:title', content: title }],
     }
-  }
+  },
 })
 </script>
 

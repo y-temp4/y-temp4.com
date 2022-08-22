@@ -5,7 +5,7 @@
     <span class="description">Hello there! Welcome to my portfolio site.</span>
     <MainHeading class="heading">About me</MainHeading>
     <p>
-      フリーランスエンジニア。主に Web
+      株式会社Typebaseのエンジニアで代表。主に Web
       のフロントエンドや、ブロックチェーン関連の技術に興味があります。
       <n-link to="/about">より詳しいプロフィール</n-link>
     </p>
