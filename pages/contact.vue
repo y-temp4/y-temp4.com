@@ -18,9 +18,17 @@
       </label>
       <label class="label">
         本文：
-        <textarea class="input" name="message" required></textarea>
+        <textarea
+          placeholder="スパム対策のため、日本語を含めてください。"
+          class="input"
+          name="message"
+          required
+          @input="(e) => (message = e.target.value)"
+        ></textarea>
       </label>
-      <button class="button" type="submit">送信</button>
+      <button class="button" type="submit" :disabled="!validMessage"
+        >送信</button
+      >
     </form>
   </main>
 </template>
@@ -38,6 +46,16 @@ export default Vue.extend({
       title,
       meta: [{ hid: 'og:title', property: 'og:title', content: title }],
     }
+  },
+  data() {
+    return {
+      message: '',
+    }
+  },
+  computed: {
+    validMessage(): boolean {
+      return !!this.message.match(/[亜-熙ぁ-んァ-ヶ]/)
+    },
   },
 })
 </script>
@@ -68,6 +86,10 @@ export default Vue.extend({
 
   &:hover {
     @apply bg-blue-7;
+  }
+
+  &:disabled {
+    @apply bg-gray-6 text-gray-8 cursor-not-allowed;
   }
 }
 </style>
