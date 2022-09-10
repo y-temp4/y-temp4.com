@@ -44,6 +44,16 @@
           個人Webサービスシステム構成事典
         </a>
       </li>
+      <li>
+        Next.js等を用いたWebアプリケーションの開発手法についての記事を執筆しました。
+        <a
+          href="https://techbookfest.org/product/dZ2G3HZrREypJHMuAvHDCM"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Next.js, Prisma, GraphQL Code Generator
+          で作るフルスタックWebアプリケーション</a
+        >
+      </li>
     </ul>
     <MainHeading class="heading">Accounts</MainHeading>
     <div class="accounts">
