@@ -45,7 +45,7 @@
         </a>
       </li>
       <li>
-        Next.js等を用いたWebアプリケーションの開発手法についての記事を執筆しました。
+        Next.js等を用いたWebアプリケーションの開発手法について解説した技術書を執筆しました。
         <a
           href="https://techbookfest.org/product/dZ2G3HZrREypJHMuAvHDCM"
           target="_blank"
