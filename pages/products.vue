@@ -6,7 +6,7 @@
       <input type="checkbox" v-model="showSuspendedProducts" />
       停止中のサービスを表示する
     </label>
-    <div v-for="product in filteredProducts" :key="product.name">
+    <div v-for="product in filteredProducts()" :key="product.name">
       <h3 class="product-name">
         <component
           :is="!product.suspended ? 'a' : 'span'"
@@ -34,35 +34,23 @@
   </main>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import type { MetaInfo } from 'vue-meta'
-import MainHeading from '~/components/MainHeading.vue'
+<script lang="ts" setup>
 import { products } from '~/data/products'
 import type { Product } from '~/data/products'
 
-export default Vue.extend({
-  components: { MainHeading },
-  data() {
-    return {
-      showSuspendedProducts: false,
-    }
-  },
-  head(): MetaInfo {
-    const title = 'Products'
-    return {
-      title,
-      meta: [{ hid: 'og:title', property: 'og:title', content: title }],
-    }
-  },
-  computed: {
-    filteredProducts(): Product[] {
-      if (this.showSuspendedProducts) {
-        return products
-      }
-      return products.filter((p) => !p.suspended)
-    },
-  },
+const showSuspendedProducts = ref(false)
+const filteredProducts = (): Product[] => {
+  if (showSuspendedProducts.value) {
+    return products
+  }
+  return products.filter((p) => !p.suspended)
+}
+
+definePageMeta({
+  meta: [{ hid: 'og:title', property: 'og:title', content: 'Products' }],
+})
+useHead({
+  title: 'Products',
 })
 </script>
 

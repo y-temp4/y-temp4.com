@@ -16,54 +16,35 @@
     </p>
     <p class="mt-10">
       基本的にフロントエンドまわりの技術を扱うのが好きです。最近最も興味のある技術は
-      <span class="font-bold">{{ mostInterestedSkills }}</span> です。
+      <span class="font-bold">{{ mostInterestedSkills() }}</span> です。
     </p>
   </main>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import { MetaInfo } from 'vue-meta'
-import MainHeading from '~/components/MainHeading.vue'
-
-export default Vue.extend({
-  components: { MainHeading },
-  computed: {
-    workSkills(): string[] {
-      return [
-        'Vue.js',
-        'Nuxt.js',
-        'TypeScript',
-        'JavaScript',
-        'React',
-        'Next.js',
-        'PostCSS',
-        'Sass',
-        'Ruby on Rails',
-        'Python',
-        'AWS'
-      ]
-    },
-    hobbySkills(): string[] {
-      return ['Firebase', 'Prisma', 'Flutter', 'Dart', 'Elixir']
-    },
-    mostInterestedSkills(): string {
-      const mostInterestedSkills = [
-        'Next.js',
-        'Prisma',
-        'Nuxt.js',
-        'TypeScript'
-      ]
-      return mostInterestedSkills.join('、')
-    }
-  },
-  head(): MetaInfo {
-    const title = 'Skills'
-    return {
-      title,
-      meta: [{ hid: 'og:title', property: 'og:title', content: title }]
-    }
-  }
+<script lang="ts" setup>
+const workSkills = [
+  'Vue.js',
+  'Nuxt.js',
+  'TypeScript',
+  'JavaScript',
+  'React',
+  'Next.js',
+  'PostCSS',
+  'Sass',
+  'Ruby on Rails',
+  'Python',
+  'AWS',
+]
+const hobbySkills = ['Firebase', 'Prisma', 'Flutter', 'Dart', 'Elixir']
+const mostInterestedSkills = (): string => {
+  const mostInterestedSkills = ['Next.js', 'Prisma', 'Nuxt.js', 'TypeScript']
+  return mostInterestedSkills.join('、')
+}
+definePageMeta({
+  meta: [{ hid: 'og:title', property: 'og:title', content: 'Skills' }],
+})
+useHead({
+  title: 'Skills',
 })
 </script>
 
