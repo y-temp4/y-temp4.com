@@ -7,7 +7,7 @@
     <p>
       株式会社Typebaseのエンジニアで代表。主に Web
       のフロントエンドや、ブロックチェーン関連の技術に興味があります。
-      <NuxtLink to="/about">より詳しいプロフィール</NuxtLink>
+      <n-link to="/about">より詳しいプロフィール</n-link>
     </p>
     <MainHeading class="heading">Skills</MainHeading>
     <p>
@@ -15,12 +15,12 @@
       <span class="font-bold">Nuxt.js</span> や
       <span class="font-bold">Next.js</span> を使った SPA
       開発をすることが多いです。
-      <NuxtLink to="/skills">その他に触れたことがある技術</NuxtLink>
+      <n-link to="/skills">その他に触れたことがある技術</n-link>
     </p>
     <MainHeading class="heading">Products</MainHeading>
     <p>
       個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。
-      <NuxtLink to="/products">作ってきたサービスの一覧</NuxtLink>
+      <n-link to="/products">作ってきたサービスの一覧</n-link>
     </p>
     <MainHeading class="heading">Works</MainHeading>
     <ul class="list-disc self-start ml-5 mt-2">
@@ -71,7 +71,7 @@
     </div>
     <MainHeading class="heading">Contact</MainHeading>
     <p>
-      <NuxtLink to="/contact">お問い合わせページ</NuxtLink>、もしくは
+      <n-link to="/contact">お問い合わせページ</n-link>、もしくは
       <a
         href="https://twitter.com/messages/compose?recipient_id=3268293518"
         target="_blank"
@@ -83,13 +83,23 @@
   </main>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
+import Vue from 'vue'
+import MainHeading from '~/components/MainHeading.vue'
 import { accounts } from '~/data/accounts'
-definePageMeta({
+import type { Account } from '~/data/accounts'
+
+export default Vue.extend({
   layout: 'home',
-})
-useHead({
-  titleTemplate: '',
+  components: { MainHeading },
+  head: {
+    titleTemplate: '',
+  },
+  computed: {
+    accounts(): Account[] {
+      return accounts
+    },
+  },
 })
 </script>
 

@@ -16,7 +16,7 @@
         【ALISメンバー紹介7】エンジニア寺嶋 - ALIS - Medium
       </a>
     </p>
-    <p>その後、約 1 年で ALIS を退職し、フリーランスとして独立。</p>
+    <p> その後、約 1 年で ALIS を退職し、フリーランスとして独立。 </p>
     <p>
       <span class="font-bold">参考：</span>
       <a
@@ -78,7 +78,7 @@
       苦手なものはタバコ、時間を守らない人、瓜系の野菜・果物（きゅうり、スイカなど）です。
     </p>
     <h3 class="heading">ID について</h3>
-    <p>普段は以下の ID で活動していることが多いです。</p>
+    <p> 普段は以下の ID で活動していることが多いです。 </p>
     <ul class="ul">
       <li>y_temp4</li>
       <li>y-temp4</li>
@@ -91,12 +91,20 @@
   </main>
 </template>
 
-<script lang="ts" setup>
-definePageMeta({
-  meta: [{ hid: 'og:title', property: 'og:title', content: 'About me' }],
-})
-useHead({
-  title: 'About me',
+<script lang="ts">
+import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
+import MainHeading from '~/components/MainHeading.vue'
+
+export default Vue.extend({
+  components: { MainHeading },
+  head(): MetaInfo {
+    const title = 'About me'
+    return {
+      title,
+      meta: [{ hid: 'og:title', property: 'og:title', content: title }],
+    }
+  },
 })
 </script>
 

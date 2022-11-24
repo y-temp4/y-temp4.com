@@ -5,43 +5,64 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
+import Vue from 'vue'
+import IconSun from '~/components/IconSun.vue'
+import IconMoon from '~/components/IconMoon.vue'
 const LOCAL_STORAGE_DARKMODE_KEY = 'darkmode'
 const DARK_THEME_CLASS = 'dark-theme'
 const LIGHT_THEME_CLASS = 'light-theme'
 
-const isDarkMode = ref(false)
-const isLoading = ref(true)
-
-function toggleDarkMode() {
-  const { classList } = document.body
-  const _isDarkMode = Array.from(classList).includes(DARK_THEME_CLASS)
-  localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, _isDarkMode ? 'off' : 'on')
-  classList[_isDarkMode ? 'remove' : 'add'](DARK_THEME_CLASS)
-  classList[_isDarkMode ? 'add' : 'remove'](LIGHT_THEME_CLASS)
-  isDarkMode.value = !_isDarkMode
-}
-
-onMounted(() => {
-  const isFirstAccess = !localStorage.getItem('darkmode')
-  if (isFirstAccess) {
-    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    const _isDarkMode = darkModeMediaQuery.matches
-    localStorage.setItem(LOCAL_STORAGE_DARKMODE_KEY, isDarkMode ? 'on' : 'off')
+export default Vue.extend({
+  components: {
+    IconSun,
+    IconMoon,
+  },
+  data() {
+    return {
+      isDarkMode: false,
+      isLoading: true,
+    }
+  },
+  mounted() {
+    const isFirstAccess = !localStorage.getItem('darkmode')
+    if (isFirstAccess) {
+      const darkModeMediaQuery = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      )
+      const isDarkMode = darkModeMediaQuery.matches
+      localStorage.setItem(
+        LOCAL_STORAGE_DARKMODE_KEY,
+        isDarkMode ? 'on' : 'off'
+      )
+      document.body.classList.add(
+        isDarkMode ? DARK_THEME_CLASS : LIGHT_THEME_CLASS
+      )
+      this.isDarkMode = isDarkMode
+      this.isLoading = false
+      return
+    }
+    const isDarkModeOnInLocalStorage =
+      localStorage.getItem(LOCAL_STORAGE_DARKMODE_KEY) === 'on'
     document.body.classList.add(
-      isDarkMode ? DARK_THEME_CLASS : LIGHT_THEME_CLASS
+      isDarkModeOnInLocalStorage ? DARK_THEME_CLASS : LIGHT_THEME_CLASS
     )
-    isDarkMode.value = _isDarkMode
-    isLoading.value = false
-    return
-  }
-  const isDarkModeOnInLocalStorage =
-    localStorage.getItem(LOCAL_STORAGE_DARKMODE_KEY) === 'on'
-  document.body.classList.add(
-    isDarkModeOnInLocalStorage ? DARK_THEME_CLASS : LIGHT_THEME_CLASS
-  )
-  isDarkMode.value = isDarkModeOnInLocalStorage
-  isLoading.value = false
+    this.isDarkMode = isDarkModeOnInLocalStorage
+    this.isLoading = false
+  },
+  methods: {
+    toggleDarkMode() {
+      const { classList } = document.body
+      const isDarkMode = Array.from(classList).includes(DARK_THEME_CLASS)
+      localStorage.setItem(
+        LOCAL_STORAGE_DARKMODE_KEY,
+        isDarkMode ? 'off' : 'on'
+      )
+      classList[isDarkMode ? 'remove' : 'add'](DARK_THEME_CLASS)
+      classList[isDarkMode ? 'add' : 'remove'](LIGHT_THEME_CLASS)
+      this.isDarkMode = !isDarkMode
+    },
+  },
 })
 </script>
 
