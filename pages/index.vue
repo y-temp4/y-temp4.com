@@ -15,12 +15,12 @@
       <span class="font-bold">Nuxt.js</span> や
       <span class="font-bold">Next.js</span> を使った SPA
       開発をすることが多いです。
-      <nuxt-link to="/skills">その他に触れたことがある技術</nuxt-link>
+      <NuxtLink to="/skills">その他に触れたことがある技術</NuxtLink>
     </p>
     <MainHeading class="heading">Products</MainHeading>
     <p>
       個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。
-      <nuxt-link to="/products">作ってきたサービスの一覧</nuxt-link>
+      <NuxtLink to="/products">作ってきたサービスの一覧</NuxtLink>
     </p>
     <MainHeading class="heading">Works</MainHeading>
     <ul class="list-disc self-start ml-5 mt-2">
@@ -71,7 +71,7 @@
     </div>
     <MainHeading class="heading">Contact</MainHeading>
     <p>
-      <nuxt-link to="/contact">お問い合わせページ</nuxt-link>、もしくは
+      <NuxtLink to="/contact">お問い合わせページ</NuxtLink>、もしくは
       <a
         href="https://twitter.com/messages/compose?recipient_id=3268293518"
         target="_blank"
