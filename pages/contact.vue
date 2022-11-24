@@ -23,29 +23,40 @@
           class="input"
           name="message"
           required
-          @input="handleInput"
+          @input="(e) => (message = e.target.value)"
         ></textarea>
       </label>
-      <button class="button" type="submit" :disabled="!validMessage()">
-        送信
-      </button>
+      <button class="button" type="submit" :disabled="!validMessage"
+        >送信</button
+      >
     </form>
   </main>
 </template>
 
-<script lang="ts" setup>
-const message = ref('')
-const validMessage = () => !!message.value.match(/[亜-熙ぁ-んァ-ヶ]/)
-const handleInput = (event: Event) => {
-  const target = event.target as HTMLTextAreaElement
-  message.value = target.value
-}
+<script lang="ts">
+import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
+import MainHeading from '~/components/MainHeading.vue'
 
-definePageMeta({
-  meta: [{ hid: 'og:title', property: 'og:title', content: 'Contact' }],
-})
-useHead({
-  title: 'Contact',
+export default Vue.extend({
+  components: { MainHeading },
+  head(): MetaInfo {
+    const title = 'Contact'
+    return {
+      title,
+      meta: [{ hid: 'og:title', property: 'og:title', content: title }],
+    }
+  },
+  data() {
+    return {
+      message: '',
+    }
+  },
+  computed: {
+    validMessage(): boolean {
+      return !!this.message.match(/[亜-熙ぁ-んァ-ヶ]/)
+    },
+  },
 })
 </script>
 
