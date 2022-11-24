@@ -12,12 +12,12 @@
     "ncu:prd": "yarn ncu --dep prod -u"
   },
   "dependencies": {
+    "nuxt": "3.0.0",
     "open-color": "git+https://github.com/y-temp4/open-color.git"
   },
   "devDependencies": {
     "@kevinmarrec/nuxt-pwa": "0.13.0",
     "@nuxtjs/tailwindcss": "6.1.3",
-    "npm-check-updates": "16.4.3",
-    "nuxt": "3.0.0"
+    "npm-check-updates": "16.4.3"
   }
 }
