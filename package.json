@@ -18,6 +18,7 @@
     "open-color": "git+https://github.com/y-temp4/open-color.git"
   },
   "devDependencies": {
-    "npm-check-updates": "16.4.3"
+    "npm-check-updates": "16.4.3",
+    "prettier": "2.8.0"
   }
 }
