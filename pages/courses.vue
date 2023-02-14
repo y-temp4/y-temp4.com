@@ -16,6 +16,8 @@
       <img
         src="~/assets/images/courses/nextjs-prisma-graphql-codegen.png"
         alt="Next.js、Prisma、GraphQL Code Generatorで作るフルスタックWebアプリケーション"
+        width="1500"
+        height="844"
       />
     </a>
     <p
