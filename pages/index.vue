@@ -17,6 +17,11 @@
       開発をすることが多いです。
       <n-link to="/skills">その他に触れたことがある技術</n-link>
     </p>
+    <MainHeading class="heading">Courses</MainHeading>
+    <p>
+      Udemyで講師をしています。主にフロントエンドに関する講座を公開しています。
+      <n-link to="/courses">公開している講座</n-link>
+    </p>
     <MainHeading class="heading">Products</MainHeading>
     <p>
       個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。
