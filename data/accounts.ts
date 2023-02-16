@@ -27,7 +27,7 @@ export const accounts: Account[] = [
   },
   {
     name: 'YouTube',
-    url: 'https://www.youtube.com/channel/UCbeUc4_bzOwLGKnKeO_XBHg',
+    url: 'https://www.youtube.com/channel/UC_fi1ofi5LiFpTs6Hys3aNw',
     color: '#ff0000',
   },
   {
