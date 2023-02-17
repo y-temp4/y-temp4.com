@@ -58,6 +58,13 @@
           >Next.js, Prisma, GraphQL Code Generator
           で作るフルスタックWebアプリケーション</a
         >
+        /
+        <a
+          href="https://nextpublishing.jp/book/16330.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >商業版はこちら</a
+        >
       </li>
     </ul>
     <MainHeading class="heading">Accounts</MainHeading>
