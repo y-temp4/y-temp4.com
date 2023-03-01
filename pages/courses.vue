@@ -9,7 +9,7 @@
       Generatorで作るフルスタックWebアプリケーション</h3
     >
     <a
-      href="https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=8152E9962C04F00467B2"
+      href="https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=AC5B9B5755FD70B2C010"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -26,7 +26,7 @@
       Generatorのコード生成を体感しながら、これらの技術をキャッチアップしていきましょう。</p
     >
     <a
-      href="https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=8152E9962C04F00467B2"
+      href="https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=AC5B9B5755FD70B2C010"
       target="_blank"
       rel="noopener noreferrer"
     >
