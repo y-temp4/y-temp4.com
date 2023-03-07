@@ -83,7 +83,12 @@
     </div>
     <MainHeading class="heading">Contact</MainHeading>
     <p>
-      <n-link to="/contact">お問い合わせページ</n-link>、もしくは
+      <a
+        href="https://forms.gle/s98g8WZHh4X1rpPD9"
+        target="_blank"
+        rel="noopener noreferrer"
+        >お問い合わせフォーム</a
+      >、もしくは
       <a
         href="https://twitter.com/messages/compose?recipient_id=3268293518"
         target="_blank"
