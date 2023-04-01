@@ -8,11 +8,7 @@
       >Next.js、Prisma、GraphQL Code
       Generatorで作るフルスタックWebアプリケーション</h3
     >
-    <a
-      href="https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=AC5B9B5755FD70B2C010"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a :href="couponLink" target="_blank" rel="noopener noreferrer">
       <img
         src="~/assets/images/courses/nextjs-prisma-graphql-codegen.png"
         alt="Next.js、Prisma、GraphQL Code Generatorで作るフルスタックWebアプリケーション"
@@ -25,11 +21,7 @@
       Code
       Generatorのコード生成を体感しながら、これらの技術をキャッチアップしていきましょう。</p
     >
-    <a
-      href="https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=AC5B9B5755FD70B2C010"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a :href="couponLink" target="_blank" rel="noopener noreferrer">
       👉 コース詳細はこちら 👈
     </a>
   </main>
@@ -48,6 +40,11 @@ export default Vue.extend({
       title,
       meta: [{ hid: 'og:title', property: 'og:title', content: title }],
     }
+  },
+  computed: {
+    couponLink(): string {
+      return 'https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=FD6CB8BD3CBDC82FC98F'
+    },
   },
 })
 </script>
