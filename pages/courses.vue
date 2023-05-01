@@ -43,7 +43,7 @@ export default Vue.extend({
   },
   computed: {
     couponLink(): string {
-      return 'https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=FD6CB8BD3CBDC82FC98F'
+      return 'https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=8014F66375EA02531CC1'
     },
   },
 })
