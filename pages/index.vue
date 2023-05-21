@@ -66,6 +66,15 @@
           >商業版はこちら</a
         >
       </li>
+      <li>
+        tRPCを用いたWebアプリケーションの開発手法について解説した技術書を執筆しました。
+        <a
+          href="https://techbookfest.org/product/1Rsbs8XcjtyHxjguptBEzU"
+          target="_blank"
+          rel="noopener noreferrer"
+          >tRPC入門―型安全なWebアプリケーションを効率よくつくる</a
+        >
+      </li>
     </ul>
     <MainHeading class="heading">Accounts</MainHeading>
     <div class="accounts">
