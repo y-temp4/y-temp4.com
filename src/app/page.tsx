@@ -25,7 +25,14 @@ export default function Page() {
       </span>
       <MainHeading className="mb-1 mt-3">About me</MainHeading>
       <p>
-        株式会社Typebaseのエンジニアで代表。主に Web
+        <a
+          href="https://typebase.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          株式会社Typebase
+        </a>{' '}
+        のエンジニアで代表。主に Web
         のフロントエンドや、ブロックチェーン関連の技術に興味があります。{' '}
         <Link href="/about">より詳しいプロフィール</Link>
       </p>
