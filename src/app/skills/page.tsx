@@ -54,7 +54,7 @@ export default function Page() {
       <p>これまでに触れたことのある技術を雑にまとめたものです。</p>
       <h3 className={heading}>実務経験があるもの</h3>
       <dl>
-        <dt>プログラミング言語：</dt>
+        <dt>言語：</dt>
         <dd className="mb-4">{workLangSkills()}</dd>
         <dt>フレームワーク・ライブラリなど：</dt>
         <dd>{workLibSkills()}</dd>
