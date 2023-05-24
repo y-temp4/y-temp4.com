@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'open-color/open-color.css';
+
+:root {
+  --color-body: var(--oc-gray-2);
+  --color-wrapper: #fff;
+  --color-link: var(--oc-blue-8);
+  --color-text: var(--oc-gray-8);
+  --color-title-border: var(--oc-gray-8);
+  --color-warn: var(--oc-red-4);
+}
+
+.dark-theme {
+  --color-body: var(--oc-gray-9);
+  --color-wrapper: var(--oc-gray-8);
+  --color-link: #fff;
+  --color-text: #fff;
+  --color-title-border: #fff;
+  --color-warn: var(--oc-red-6);
+
+  & a {
+    @apply underline hover:no-underline;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-body: var(--oc-gray-9);
+    --color-wrapper: var(--oc-gray-8);
+    --color-link: #fff;
+    --color-text: #fff;
+    --color-title-border: #fff;
+    --color-warn: var(--oc-red-6);
+
+    & a {
+      @apply underline hover:no-underline;
+    }
+  }
+
+  & .light-theme {
+    --color-body: var(--oc-gray-2);
+    --color-wrapper: #fff;
+    --color-link: var(--oc-blue-8);
+    --color-text: var(--oc-gray-8);
+    --color-title-border: var(--oc-gray-8);
+    --color-warn: var(--oc-red-4);
+  }
+}
+
+@font-face {
+  font-family: Raleway;
+  font-weight: normal;
+  font-display: swap;
+  src: url('/fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: Raleway;
+  font-weight: bold;
+  font-display: swap;
+  src: url('/fonts/Raleway-Bold.ttf');
+}
+
+html {
+  font-family: Raleway, 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.05em;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  @apply text-text bg-body leading-relaxed;
+  transition: background-color 0.3s;
+}
+
+a {
+  @apply text-link hover:underline;
+}
+
+p {
+  @apply w-full mt-2 mb-4;
+  line-height: 1.8;
+}
