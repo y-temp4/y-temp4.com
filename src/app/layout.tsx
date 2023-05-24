@@ -5,6 +5,8 @@ import { Raleway } from 'next/font/google';
 
 import { ToggleDarkModeButton } from '~/components/ToggleDarkModeButton';
 
+import { Providers } from './providers';
+
 const title = 'y-temp4.com';
 const description = 'Portfolio site of y-temp4.';
 
@@ -47,12 +49,14 @@ export default function RootLayout({
   return (
     <html lang="ja" className={raleway.className}>
       <body>
-        <div className="p-4 pb-16 sm:p-6">
-          <div className="container mx-auto max-w-2xl bg-wrapper p-4 pb-2 sm:p-8 sm:pb-5">
-            {children}
+        <Providers>
+          <div className="p-4 pb-16 sm:p-6">
+            <div className="container mx-auto max-w-2xl bg-wrapper p-4 pb-2 sm:p-8 sm:pb-5">
+              {children}
+            </div>
+            <ToggleDarkModeButton />
           </div>
-          <ToggleDarkModeButton />
-        </div>
+        </Providers>
       </body>
     </html>
   );
