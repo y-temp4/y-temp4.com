@@ -1,0 +1,27 @@
+.description {
+  @apply relative px-6 py-3 bg-blue-5 text-white rounded-lg font-bold my-4;
+
+  &::before {
+    @apply absolute block w-0 h-0 rounded-full;
+    content: '';
+    transform: rotate(45deg);
+    right: 20px;
+    top: -15px;
+    border-left: 20px solid #339af0;
+    border-top: 20px solid #339af0;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+
+  &::after {
+    @apply absolute block w-0 h-0 rounded-full;
+    content: '';
+    transform: rotate(45deg);
+    right: 35px;
+    top: -20px;
+    border-left: 20px solid var(--color-wrapper);
+    border-top: 20px solid var(--color-wrapper);
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+}

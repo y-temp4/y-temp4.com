@@ -1,0 +1,6 @@
+.next
+*.module.css.d.ts
+node_modules
+out
+public
+yarn.lock

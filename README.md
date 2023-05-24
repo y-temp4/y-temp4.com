@@ -1,21 +1,19 @@
-# [y-temp4.com](https://y-temp4.com)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/be7df1bf-16b1-49a4-945a-445d1a648258/deploy-status)](https://app.netlify.com/sites/y-temp4/deploys)
+# [portfolio](https://y-temp4.com)
 
 > Portfolio site of [@y_temp4](https://twitter.com/y_temp4).
 
-## Stack
+## Tech Stack
 
-- Nuxt.js
+- Next.js
 - TypeScript
 - Tailwind CSS
-- Netlify
+- Cloudflare Pages
 
 ## Build Setup
 
-```bash
+```sh
 $ yarn
-$ yarn dev # serve with hot reload at localhost:3333
+$ yarn dev # serve with hot reload at localhost:3000
 ```
 
 ## License
