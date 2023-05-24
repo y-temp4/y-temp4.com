@@ -1,4 +1,4 @@
-export type Account = {
+type Account = {
   name: string;
   url: `https://${string}`;
   color: `#${string}`;
