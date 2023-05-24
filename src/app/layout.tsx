@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   },
   themeColor: '#339af0',
   twitter: { site: '@y_temp4', creator: '@y_temp4' },
-  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
