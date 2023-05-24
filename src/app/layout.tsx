@@ -1,6 +1,7 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
+import { Raleway } from 'next/font/google';
 
 import { ToggleDarkModeButton } from '~/components/ToggleDarkModeButton';
 
@@ -22,13 +23,29 @@ export const metadata: Metadata = {
   twitter: { site: '@y_temp4', creator: '@y_temp4' },
 };
 
+const raleway = Raleway({
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  fallback: [
+    'Source Sans Pro',
+    '-apple-system',
+    'BlinkMacSystemFont',
+    'Segoe UI',
+    'Roboto',
+    'Helvetica Neue',
+    'Arial',
+    'sans-serif',
+  ],
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
+    <html lang="ja" className={raleway.className}>
       <body>
         <div className="p-4 pb-16 sm:p-6">
           <div className="container mx-auto max-w-2xl bg-wrapper p-4 pb-2 sm:p-8 sm:pb-5">
