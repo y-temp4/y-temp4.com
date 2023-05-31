@@ -8,6 +8,14 @@ type Product = {
 
 export const products: Product[] = [
   {
+    name: 'Refiner',
+    productURL: 'https://www.refiner.dev',
+    description:
+      'OpenAI GPT3 APIを用いた、コードをリファクタリングするためのサービス',
+    introductionURL: 'https://qiita.com/y-temp4/items/8c5e83459461d6c9acdc',
+    suspended: false,
+  },
+  {
     name: 'べじはっく',
     productURL: 'https://vghack.com',
     description: '(完全)菜食主義に興味がある方向けの質問サイト',
