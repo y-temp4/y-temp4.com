@@ -10,7 +10,7 @@ export const metadata: Metadata = { title, openGraph: { title } };
 export default function Page() {
   const heading = 'text-xl text-left w-full font-bold mt-8 mb-1';
   const couponLink =
-    'https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=E502027D9EE720D40B7A';
+    'https://www.udemy.com/course/nextjs-prisma-graphql-codegen/?couponCode=90D82193F7BAEC2A9AA9';
   return (
     <main>
       <MainHeading>Courses</MainHeading>
