@@ -12,8 +12,8 @@
 ## Build Setup
 
 ```sh
-$ yarn
-$ yarn dev # serve with hot reload at localhost:3000
+$ pnpm
+$ pnpm dev # serve with hot reload at localhost:3000
 ```
 
 ## License
