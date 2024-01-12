@@ -8,6 +8,7 @@
 - TypeScript
 - Tailwind CSS
 - Cloudflare Pages
+- pnpm
 
 ## Build Setup
 
