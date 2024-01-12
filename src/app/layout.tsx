@@ -1,6 +1,6 @@
 import './globals.css';
 
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Raleway } from 'next/font/google';
 
 import { ToggleDarkModeButton } from '~/components/ToggleDarkModeButton';
@@ -21,8 +21,11 @@ export const metadata: Metadata = {
     title,
     description,
   },
-  themeColor: '#339af0',
   twitter: { site: '@y_temp4', creator: '@y_temp4' },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#339af0',
 };
 
 const raleway = Raleway({
