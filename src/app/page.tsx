@@ -136,7 +136,7 @@ export default function Page() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Twitter の DM
+          X(Twitter) の DM
         </a>{' '}
         にて受け付けています。
       </p>

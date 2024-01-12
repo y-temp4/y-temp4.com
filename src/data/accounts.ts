@@ -6,7 +6,7 @@ type Account = {
 
 export const accounts: Account[] = [
   {
-    name: 'Twitter',
+    name: 'X(Twitter)',
     url: 'https://twitter.com/y_temp4',
     color: '#1da1f2',
   },
