@@ -1,12 +1,9 @@
 'use client';
 
 import { ThemeProvider } from 'next-themes';
+import type { PropsWithChildren } from 'react';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-export function Providers({ children }: Props) {
+export function Providers({ children }: PropsWithChildren) {
   return (
     <ThemeProvider storageKey="theme-y-temp4.com">{children}</ThemeProvider>
   );

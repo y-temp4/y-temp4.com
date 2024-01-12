@@ -2,6 +2,7 @@ import './globals.css';
 
 import type { Metadata, Viewport } from 'next';
 import { Raleway } from 'next/font/google';
+import type { PropsWithChildren } from 'react';
 
 import { ToggleDarkModeButton } from '~/components/ToggleDarkModeButton';
 
@@ -44,11 +45,7 @@ const raleway = Raleway({
   ],
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="ja" className={raleway.className}>
       <body>
