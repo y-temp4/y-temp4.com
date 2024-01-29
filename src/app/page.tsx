@@ -23,7 +23,7 @@ export default function Page() {
       <span className={s.description}>
         Hello there! Welcome to my portfolio site.
       </span>
-      <MainHeading className="mb-1 mt-3">About me</MainHeading>
+      <MainHeading className="mb-1 mt-3">💁 About me</MainHeading>
       <p>
         <a
           href="https://typebase.dev"
@@ -36,7 +36,7 @@ export default function Page() {
         のフロントエンドや、ブロックチェーン関連の技術に興味があります。{' '}
         <Link href="/about">より詳しいプロフィール</Link>
       </p>
-      <MainHeading className="mb-1 mt-3">Skills</MainHeading>
+      <MainHeading className="mb-1 mt-3">🛠 Skills</MainHeading>
       <p>
         Web のフロントエンド関連の技術が得意です。また、最近は{' '}
         <span className="font-bold">Next.js</span> や{' '}
@@ -44,17 +44,17 @@ export default function Page() {
         開発をすることが多いです。{' '}
         <Link href="/skills">その他に触れたことがある技術</Link>
       </p>
-      <MainHeading className="mb-1 mt-3">Courses</MainHeading>
+      <MainHeading className="mb-1 mt-3">🎥 Courses</MainHeading>
       <p>
         Udemyで講師をしています。主にフロントエンドに関する講座を公開しています。{' '}
         <Link href="/courses">公開している講座</Link>
       </p>
-      <MainHeading className="mb-1 mt-3">Products</MainHeading>
+      <MainHeading className="mb-1 mt-3">🚀 Products</MainHeading>
       <p>
         個人開発が好きで、これまでにいくつかちょっとしたサービスを作っています。{' '}
         <a href="/products">作ってきたサービスの一覧</a>
       </p>
-      <MainHeading className="mb-1 mt-3">Works</MainHeading>
+      <MainHeading className="mb-1 mt-3">📖 Works</MainHeading>
       <ul className="ml-5 mt-2 list-disc self-start">
         <li>
           共著で Vue 3 についての技術書を執筆しました。{' '}
@@ -106,7 +106,7 @@ export default function Page() {
           </a>
         </li>
       </ul>
-      <MainHeading className="mb-1 mt-3">Accounts</MainHeading>
+      <MainHeading className="mb-1 mt-3">🌐 Accounts</MainHeading>
       <div className="mb-2 flex w-full flex-row flex-wrap">
         {accounts.map((account) => (
           <a
@@ -125,7 +125,7 @@ export default function Page() {
           </a>
         ))}
       </div>
-      <MainHeading className="mb-1 mt-3">Contact</MainHeading>
+      <MainHeading className="mb-1 mt-3">✉️ Contact</MainHeading>
       <p>
         <a
           href="https://forms.gle/s98g8WZHh4X1rpPD9"
@@ -143,6 +143,8 @@ export default function Page() {
           X(Twitter) の DM
         </a>{' '}
         にて受け付けています。
+        <br />
+        ※X の DM は返信が遅れることがあります。ご了承ください。
       </p>
     </main>
   );

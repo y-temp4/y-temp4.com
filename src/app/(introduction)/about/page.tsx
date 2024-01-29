@@ -80,6 +80,19 @@ export default function Page() {
         </a>
         ということになっています。
       </p>
+      <p>
+        最近はマンガ以外の本を読むことも多いです。読んだ本はブログで紹介しています。
+      </p>
+      <p>
+        <span className="font-bold">参考：</span>
+        <a
+          href="https://blog.y-temp4.com/category/reading"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          読書カテゴリーの記事一覧
+        </a>
+      </p>
       <p>またサウナが好きで、だいたい週に 1 回くらいは行っています。</p>
       <p>
         苦手なものはタバコ、時間を守らない人、瓜系の野菜・果物（きゅうり、スイカなど）です。
@@ -93,7 +106,7 @@ export default function Page() {
       </ul>
       <p>
         yt4
-        は短いので取得しにくく、新規サービスがリリースされたときなどに取得しがちです。
+        は短いため取得しにくく、新規サービスがリリースされたときなどに取得しがちです。
       </p>
     </main>
   );
