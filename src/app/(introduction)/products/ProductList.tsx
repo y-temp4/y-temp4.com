@@ -18,6 +18,7 @@ export const ProductList = () => {
     <>
       <label className="flex cursor-pointer select-none items-center space-x-2 py-1 text-sm">
         <input
+          className="cursor-pointer"
           type="checkbox"
           checked={showSuspendedProducts}
           onChange={(e) => setShowSuspendedProducts(e.target.checked)}

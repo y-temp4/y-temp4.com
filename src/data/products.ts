@@ -13,7 +13,7 @@ export const products: Product[] = [
     description:
       'OpenAI GPT3 APIを用いた、コードをリファクタリングするためのサービス',
     introductionURL: 'https://qiita.com/y-temp4/items/8c5e83459461d6c9acdc',
-    suspended: false,
+    suspended: true,
   },
   {
     name: 'べじはっく',

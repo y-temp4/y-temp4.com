@@ -112,10 +112,14 @@ export default function Page() {
           <a
             key={account.name}
             href={account.url}
-            className="mr-3 mt-2 block rounded-lg border-2 border-white px-4 py-1 text-center font-bold text-white hover:opacity-75"
+            className="mr-3 mt-2 block rounded-lg border-2 border-gray-4 px-4 py-1 text-center font-bold text-white hover:opacity-75"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ background: account.color, textDecoration: 'none' }}
+            style={{
+              background: account.bgColor,
+              textDecoration: 'none',
+              color: account.textColor,
+            }}
           >
             {account.name}
           </a>

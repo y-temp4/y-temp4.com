@@ -17,16 +17,6 @@ export default function Page() {
         開発の技術を学びました。卒業後、ALIS
         というブロックチェーン系のスタートアップにジョインしました。
       </p>
-      <p>
-        <span className="font-bold">入社したときに書いた記事：</span>
-        <a
-          href="https://medium.com/@alismedia/alis%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E7%B4%B9%E4%BB%8B7-%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E5%AF%BA%E5%B6%8B-f0856af30ce0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          【ALISメンバー紹介7】エンジニア寺嶋 - ALIS - Medium
-        </a>
-      </p>
       <p> その後、約 1 年で ALIS を退職し、フリーランスとして独立。 </p>
       <p>
         <span className="font-bold">参考：</span>
@@ -39,7 +29,7 @@ export default function Page() {
         </a>
       </p>
       <p>
-        2022年8月に
+        2022 年 8 月に
         <a
           href="https://typebase.dev/"
           target="_blank"
@@ -68,14 +58,14 @@ export default function Page() {
         >
           最近のNuxt.js関係の仕事内容
         </a>
-        」にまとめています。また、現在は副業で
+        」にまとめています。また、現在は副業で{' '}
         <a
           href="https://techbowl.co.jp/techtrain/mentors/65"
           target="_blank"
           rel="noopener noreferrer"
         >
-          TechTrainのメンター
-        </a>
+          TechTrain のメンター
+        </a>{' '}
         も行っています。
       </p>
       <h3 className={heading}>趣味など</h3>
@@ -90,10 +80,7 @@ export default function Page() {
         </a>
         ということになっています。
       </p>
-      <p>
-        また、ミニマリストでもあり、ほぼ毎日同じ服を着て過ごしています。
-        あと、サウナが好きで、だいたい週に 1 回くらいは行っています。
-      </p>
+      <p>またサウナが好きで、だいたい週に 1 回くらいは行っています。</p>
       <p>
         苦手なものはタバコ、時間を守らない人、瓜系の野菜・果物（きゅうり、スイカなど）です。
       </p>

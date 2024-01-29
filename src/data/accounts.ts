@@ -1,38 +1,51 @@
 type Account = {
   name: string;
   url: `https://${string}`;
-  color: `#${string}`;
+  bgColor: `#${string}`;
+  textColor: '#fff' | '#343a40'; // --oc-gray-8
 };
 
 export const accounts: Account[] = [
   {
+    name: 'ブログ',
+    url: 'https://blog.y-temp4.com',
+    bgColor: '#339af0',
+    textColor: '#fff',
+  },
+  {
     name: 'X(Twitter)',
     url: 'https://twitter.com/y_temp4',
-    color: '#1da1f2',
+    bgColor: '#000',
+    textColor: '#fff',
   },
   {
     name: 'GitHub',
     url: 'https://github.com/y-temp4',
-    color: '#333',
-  },
-  {
-    name: 'Qiita',
-    url: 'https://qiita.com/y-temp4',
-    color: '#55c500',
-  },
-  {
-    name: 'Blog',
-    url: 'https://blog.y-temp4.com',
-    color: '#339af0',
+    bgColor: '#333',
+    textColor: '#fff',
   },
   {
     name: 'YouTube',
     url: 'https://www.youtube.com/channel/UC_fi1ofi5LiFpTs6Hys3aNw',
-    color: '#ff0000',
+    bgColor: '#ff0000',
+    textColor: '#fff',
   },
   {
     name: 'Zenn',
     url: 'https://zenn.dev/yt4',
-    color: '#3ea8ff',
+    bgColor: '#3ea8ff',
+    textColor: '#fff',
+  },
+  {
+    name: 'Qiita',
+    url: 'https://qiita.com/y-temp4',
+    bgColor: '#55c500',
+    textColor: '#fff',
+  },
+  {
+    name: 'しずかなインターネット',
+    url: 'https://sizu.me/yt4',
+    bgColor: '#fff',
+    textColor: '#343a40',
   },
 ];
