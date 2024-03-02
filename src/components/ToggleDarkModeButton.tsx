@@ -25,15 +25,15 @@ export const ToggleDarkModeButton = () => {
 
   return (
     <div
-      className={`${buttonBg} fixed bottom-[30px] right-[30px] flex h-[54px] w-[54px] cursor-pointer items-center justify-center rounded-full outline-none [&.toggle-darkmode-button]:bg-white [&_.icon]:hover:text-blue-5`}
+      className={`${buttonBg} fixed bottom-[30px] right-[30px] flex size-[54px] cursor-pointer items-center justify-center rounded-full outline-none [&.toggle-darkmode-button]:bg-white [&_.icon]:hover:text-blue-5`}
       onClick={toggleDarkMode}
     >
       {isDarkMode ? (
-        <div className="icon h-6 w-6 text-gray-7 transition duration-200">
+        <div className="icon size-6 text-gray-7 transition duration-200">
           <IconSun />
         </div>
       ) : (
-        <div className="icon h-6 w-6 text-white transition duration-200">
+        <div className="icon size-6 text-white transition duration-200">
           <IconMoon />
         </div>
       )}

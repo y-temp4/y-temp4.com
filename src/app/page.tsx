@@ -15,7 +15,7 @@ export default function Page() {
         alt="y-temp4"
         width={128}
         height={128}
-        className="h-32 w-32 rounded-full border-4 border-white"
+        className="size-32 rounded-full border-4 border-white"
       />
       <span className="mt-2 whitespace-nowrap text-center text-3xl font-bold">
         Yuki Terashima
