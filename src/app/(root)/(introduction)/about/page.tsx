@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 import { MainHeading } from '~/components/MainHeading';
 
@@ -81,7 +82,9 @@ export default function Page() {
         ということになっています。
       </p>
       <p>
-        最近はマンガ以外の本を読むことも多いです。読んだ本はブログで紹介しています。
+        最近はマンガ以外の本を読むことも多いです（{' '}
+        <Link href="/books">読んだ本の一覧</Link>{' '}
+        ）。読んだ本はブログで紹介しています。
       </p>
       <p>
         <span className="font-bold">参考：</span>
