@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
 
 import { MainHeading } from '~/components/MainHeading';
 
@@ -12,7 +13,9 @@ export default function Page() {
   return (
     <main>
       <MainHeading>Books</MainHeading>
-      <Books />
+      <Suspense>
+        <Books />
+      </Suspense>
     </main>
   );
 }
