@@ -1,10 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { parseAsStringLiteral, useQueryState } from 'nuqs';
 
 export const Books = (): JSX.Element => {
-  const [layout, setLayout] = useState<'grid' | 'list'>('grid');
+  const layouts = ['grid', 'list'] as const;
+  const [layout, setLayout] = useQueryState(
+    'layout',
+    parseAsStringLiteral(layouts).withDefault('grid'),
+  );
   const books = [
     {
       title: '「文章術のベストセラー100冊」のポイントを1冊にまとめてみた。',
