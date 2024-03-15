@@ -16,9 +16,9 @@ export default function Page() {
         1994
         年生まれ。大学は情報系の学部で、学生時代は課外活動と個人開発を通じて Web
         開発の技術を学びました。卒業後、ALIS
-        というブロックチェーン系のスタートアップにジョインしました。
+        というブロックチェーン系のスタートアップに入社。その後、約 1 年で ALIS
+        を退職し、フリーランスとして独立しました。
       </p>
-      <p> その後、約 1 年で ALIS を退職し、フリーランスとして独立。 </p>
       <p>
         <span className="font-bold">参考：</span>
         <a
@@ -30,14 +30,14 @@ export default function Page() {
         </a>
       </p>
       <p>
-        2022 年 8 月に
+        2022 年 8 月に{' '}
         <a
           href="https://typebase.dev/"
           target="_blank"
           rel="noopener noreferrer"
         >
           株式会社Typebase
-        </a>
+        </a>{' '}
         を創業しました。
       </p>
       <p>
@@ -71,18 +71,19 @@ export default function Page() {
       </p>
       <h3 className={heading}>趣味など</h3>
       <p>
-        上記メンバー紹介の記事にも書いていますが、マンガを読むのが好きでよく読んでいます。一番好きなマンガは
+        漫画を読むのが好きです。最近 Kindle で購入した漫画が 4,000
+        冊を超えました。一番好きな漫画は{' '}
         <a
           href="http://worldtrigger.info/"
           target="_blank"
           rel="noopener noreferrer"
         >
           ワールドトリガー
-        </a>
+        </a>{' '}
         ということになっています。
       </p>
       <p>
-        最近はマンガ以外の本を読むことも多いです（{' '}
+        最近は漫画以外の本を読むことも多いです（{' '}
         <Link href="/books">読んだ本の一覧</Link>{' '}
         ）。読んだ本はブログで紹介しています。
       </p>
