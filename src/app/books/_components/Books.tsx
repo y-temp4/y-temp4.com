@@ -210,7 +210,12 @@ export const Books = (): JSX.Element => {
               <a href={book.url} target="_blank" rel="noopener noreferrer">
                 {book.title}
               </a>
-              <a href={book.thoughtsURL} className="whitespace-nowrap">
+              <a
+                href={book.thoughtsURL}
+                className="whitespace-nowrap"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 感想
               </a>
             </div>
