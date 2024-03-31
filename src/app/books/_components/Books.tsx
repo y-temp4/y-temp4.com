@@ -11,6 +11,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'ダイナミックな田舎暮らしのススメ',
+      url: 'https://www.amazon.co.jp/dp/491067408X?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/491067408X.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-3-read-books',
+      readAt: '2024.03.31',
+    },
+    {
+      title: '天を味方につける生き方',
+      url: 'https://www.amazon.co.jp/dp/486742160X?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/486742160X.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-3-read-books',
+      readAt: '2024.03.15',
+    },
+    {
       title: '「文章術のベストセラー100冊」のポイントを1冊にまとめてみた。',
       url: 'https://www.amazon.co.jp/dp/4822289060?tag=lorem-ipsum-22',
       cover:
