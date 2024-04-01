@@ -11,7 +11,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "run-p -l -c --aggregate-output lint:*",
+    "lint": "run-p -lcn lint:*",
     "lint:eslint": "next lint",
     "lint:prettier": "prettier --check .",
     "lint:typecheck": "tsc",
