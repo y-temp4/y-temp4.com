@@ -4,6 +4,9 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
+  experimental: {
+    typedRoutes: true,
+  },
 };
 
 module.exports = nextConfig;
