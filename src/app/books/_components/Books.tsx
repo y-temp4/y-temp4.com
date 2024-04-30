@@ -11,6 +11,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'エコハウスのウソ',
+      url: 'https://www.amazon.co.jp/dp/4822200531?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4822200531.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-4-read-books',
+      readAt: '2024.04.28',
+    },
+    {
+      title: '小屋を建てる',
+      url: 'https://www.amazon.co.jp/dp/4594619991?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4594619991.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-4-read-books',
+      readAt: '2024.04.12',
+    },
+    {
       title: 'ダイナミックな田舎暮らしのススメ',
       url: 'https://www.amazon.co.jp/dp/491067408X?tag=lorem-ipsum-22',
       cover:
