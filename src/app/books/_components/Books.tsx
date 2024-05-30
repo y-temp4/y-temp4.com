@@ -11,6 +11,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '言ってはいけない 残酷すぎる真実',
+      url: 'https://www.amazon.co.jp/dp/4106106639?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4106106639.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-5-read-books',
+      readAt: '2024.05.24',
+    },
+    {
+      title: 'はじめての日月神示',
+      url: 'https://www.amazon.co.jp/dp/488469936X?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/488469936X.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-5-read-books',
+      readAt: '2024.05.06',
+    },
+    {
       title: 'エコハウスのウソ',
       url: 'https://www.amazon.co.jp/dp/4822200531?tag=lorem-ipsum-22',
       cover:
