@@ -47,7 +47,8 @@ const raleway = Raleway({
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="ja" className={raleway.className}>
+    // https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
+    <html lang="ja" className={raleway.className} suppressHydrationWarning>
       <body>
         <Providers>
           <div className="p-4 pb-16 sm:p-6">

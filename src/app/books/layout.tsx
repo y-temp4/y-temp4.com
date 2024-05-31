@@ -28,7 +28,7 @@ const raleway = Raleway({
 
 export default function BooksLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="ja" className={raleway.className}>
+    <html lang="ja" className={raleway.className} suppressHydrationWarning>
       <body>
         <Providers>
           <div className="p-0 pb-20 sm:p-6">
