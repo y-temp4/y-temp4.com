@@ -10,22 +10,14 @@ const title = 'y-temp4.com';
 const description = 'Portfolio site of y-temp4.';
 
 export const metadata: Metadata = {
-  title: {
-    default: title,
-    template: `%s - ${title}`,
-  },
+  title: { default: title, template: `%s - ${title}` },
   description,
   metadataBase: new URL('https://y-temp4.com'),
-  openGraph: {
-    title,
-    description,
-  },
+  openGraph: { title, description },
   twitter: { site: '@y_temp4', creator: '@y_temp4' },
 };
 
-export const viewport: Viewport = {
-  themeColor: '#339af0',
-};
+export const viewport: Viewport = { themeColor: '#339af0' };
 
 const raleway = Raleway({
   subsets: ['latin'],
