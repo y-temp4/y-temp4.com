@@ -4,8 +4,6 @@ import type { Metadata, Viewport } from 'next';
 import { Raleway } from 'next/font/google';
 import type { PropsWithChildren } from 'react';
 
-import { ToggleDarkModeButton } from '~/components/ToggleDarkModeButton';
-
 import { Providers } from './providers';
 
 const title = 'y-temp4.com';
