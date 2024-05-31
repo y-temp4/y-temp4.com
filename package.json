@@ -25,6 +25,7 @@
     "next": "14.2.3",
     "next-sitemap": "4.2.3",
     "next-themes": "0.3.0",
+    "next-view-transitions": "0.2.0",
     "nuqs": "1.17.4",
     "open-color": "git+https://github.com/y-temp4/open-color.git",
     "react": "18.3.1",

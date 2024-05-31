@@ -1,10 +1,11 @@
-import Link from 'next/link';
 import type { PropsWithChildren } from 'react';
+
+import { ViewTransitionLink } from '~/components/ViewTransitionLink';
 
 export default function DefaultLayout({ children }: PropsWithChildren) {
   return (
     <>
-      <Link href="/">👈 トップに戻る</Link>
+      <ViewTransitionLink href="/">👈 トップに戻る</ViewTransitionLink>
       {children}
     </>
   );

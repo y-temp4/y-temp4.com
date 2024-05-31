@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
 import { MainHeading } from '~/components/MainHeading';
+import { ViewTransitionLink } from '~/components/ViewTransitionLink';
 import { accounts } from '~/data/accounts';
 
 import s from './page.module.css';
@@ -41,7 +41,9 @@ const AboutMeSection = (): JSX.Element => (
         株式会社Typebase
       </a>{' '}
       のエンジニアで代表。主に Web のフロントエンド関連の技術に興味があります。{' '}
-      <Link href="/about">より詳しいプロフィール</Link>
+      <ViewTransitionLink href="/about">
+        より詳しいプロフィール
+      </ViewTransitionLink>
     </p>
   </>
 );
@@ -54,7 +56,9 @@ const SkillsSection = (): JSX.Element => (
       <span className="font-bold">Next.js</span> や{' '}
       <span className="font-bold">Nuxt</span> を使った SPA
       開発をすることが多いです。{' '}
-      <Link href="/skills">その他に触れたことがある技術</Link>
+      <ViewTransitionLink href="/skills">
+        その他に触れたことがある技術
+      </ViewTransitionLink>
     </p>
   </>
 );
@@ -64,7 +68,7 @@ const CoursesSection = (): JSX.Element => (
     <MainHeading className="mb-1 mt-3">🎥 Courses</MainHeading>
     <p>
       Udemyで講師をしています。主にフロントエンドに関する講座を公開しています。{' '}
-      <Link href="/courses">公開している講座</Link>
+      <ViewTransitionLink href="/courses">公開している講座</ViewTransitionLink>
     </p>
   </>
 );
