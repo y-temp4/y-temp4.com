@@ -1,6 +1,7 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import type { ChangeEvent } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 import { products } from '~/data/products';
 
@@ -14,6 +15,10 @@ export const ProductList = () => {
     return products.filter((p) => !p.suspended);
   }, [showSuspendedProducts]);
 
+  const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+    setShowSuspendedProducts(e.target.checked);
+  }, []);
+
   return (
     <>
       <label className="flex cursor-pointer select-none items-center space-x-2 py-1 text-sm">
@@ -21,7 +26,7 @@ export const ProductList = () => {
           className="cursor-pointer"
           type="checkbox"
           checked={showSuspendedProducts}
-          onChange={(e) => setShowSuspendedProducts(e.target.checked)}
+          onChange={handleChange}
         />
         <span>停止中のサービスを表示する</span>
       </label>
