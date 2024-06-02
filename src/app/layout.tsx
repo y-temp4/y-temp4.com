@@ -2,6 +2,7 @@ import './globals.css';
 
 import type { Metadata, Viewport } from 'next';
 import { Raleway } from 'next/font/google';
+import { ViewTransitions } from 'next-view-transitions';
 import type { PropsWithChildren } from 'react';
 
 import { Providers } from './providers';
@@ -37,11 +38,13 @@ const raleway = Raleway({
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    // https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
-    <html lang="ja" className={raleway.className} suppressHydrationWarning>
-      <body>
-        <Providers>{children}</Providers>
-      </body>
-    </html>
+    <ViewTransitions>
+      {/* https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app */}
+      <html lang="ja" className={raleway.className} suppressHydrationWarning>
+        <body>
+          <Providers>{children}</Providers>
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

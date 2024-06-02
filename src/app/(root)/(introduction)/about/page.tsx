@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 
 import { MainHeading } from '~/components/MainHeading';
+import { ViewTransitionLink } from '~/components/ViewTransitionLink';
 
 const title = 'About me';
 
@@ -84,7 +84,7 @@ export default function Page() {
       </p>
       <p>
         最近は漫画以外の本を読むことも多いです（{' '}
-        <Link href="/books">読んだ本の一覧</Link>{' '}
+        <ViewTransitionLink href="/books">読んだ本の一覧</ViewTransitionLink>{' '}
         ）。読んだ本はブログで紹介しています。
       </p>
       <p>
