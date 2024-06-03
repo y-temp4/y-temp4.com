@@ -49,3 +49,8 @@ p {
   @apply w-full mt-2 mb-4;
   line-height: 1.8;
 }
+
+:where(:any-link) {
+  text-decoration-color: color-mix(in srgb, currentcolor, transparent 40%);
+  text-underline-offset: 0.25em;
+}
