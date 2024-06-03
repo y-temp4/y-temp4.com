@@ -50,10 +50,9 @@ const SkillsSection = (): JSX.Element => (
   <>
     <MainHeading className="mb-1 mt-3">🛠 Skills</MainHeading>
     <p>
-      Web のフロントエンド関連の技術が得意です。また、最近は{' '}
+      Web のフロントエンド関連の技術が得意です。最近は{' '}
       <span className="font-bold">Next.js</span> や{' '}
-      <span className="font-bold">Nuxt</span> を使った SPA
-      開発をすることが多いです。{' '}
+      <span className="font-bold">Nuxt</span> を使った開発をすることが多いです。{' '}
       <Link href="/skills">その他に触れたことがある技術</Link>
     </p>
   </>
@@ -63,7 +62,7 @@ const CoursesSection = (): JSX.Element => (
   <>
     <MainHeading className="mb-1 mt-3">🎥 Courses</MainHeading>
     <p>
-      Udemyで講師をしています。主にフロントエンドに関する講座を公開しています。{' '}
+      Udemy で講師をしています。主にフロントエンドに関する講座を公開しています。{' '}
       <Link href="/courses">公開している講座</Link>
     </p>
   </>
@@ -99,7 +98,8 @@ const ProductsSection = (): JSX.Element => (
         </a>
       </li>
       <li className="my-2">
-        Next.js等を用いたWebアプリケーションの開発手法について解説した技術書を執筆しました。{' '}
+        Next.js
+        等を用いたWebアプリケーションの開発手法について解説した技術書を執筆しました。{' '}
         <a
           href="https://techbookfest.org/product/dZ2G3HZrREypJHMuAvHDCM"
           target="_blank"
@@ -118,7 +118,8 @@ const ProductsSection = (): JSX.Element => (
         </a>
       </li>
       <li className="my-2">
-        tRPCを用いたWebアプリケーションの開発手法について解説した技術書を執筆しました。{' '}
+        tRPC を用いた Web
+        アプリケーションの開発手法について解説した技術書を執筆しました。{' '}
         <a
           href="https://techbookfest.org/product/1Rsbs8XcjtyHxjguptBEzU"
           target="_blank"
