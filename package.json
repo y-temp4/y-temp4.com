@@ -22,7 +22,7 @@
     "ncu:prod": "ncu -u --dep prod"
   },
   "dependencies": {
-    "next": "14.2.3",
+    "next": "14.2.4",
     "next-sitemap": "4.2.3",
     "next-themes": "0.3.0",
     "nuqs": "1.17.4",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@tsconfig/strictest": "2.0.5",
-    "@types/node": "20.14.0",
+    "@types/node": "20.14.9",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "@typescript-eslint/eslint-plugin": "7.11.0",
@@ -41,18 +41,18 @@
     "autoprefixer": "10.4.19",
     "concurrently": "8.2.2",
     "eslint": "8.57.0",
-    "eslint-config-next": "14.2.3",
+    "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-simple-import-sort": "12.1.0",
-    "eslint-plugin-tailwindcss": "3.17.0",
-    "happy-css-modules": "3.0.1",
+    "eslint-plugin-tailwindcss": "3.17.4",
+    "happy-css-modules": "3.1.1",
     "npm-check-updates": "16.14.20",
     "npm-run-all": "4.1.5",
-    "postcss": "8.4.38",
+    "postcss": "8.4.39",
     "postcss-nesting": "12.1.5",
-    "prettier": "3.3.0",
-    "tailwindcss": "3.4.3",
-    "typescript": "5.4.5"
+    "prettier": "3.3.2",
+    "tailwindcss": "3.4.4",
+    "typescript": "5.5.2"
   },
   "packageManager": "pnpm@9.1.4+sha512.9df9cf27c91715646c7d675d1c9c8e41f6fce88246f1318c1aa6a1ed1aeb3c4f032fcdf4ba63cc69c4fe6d634279176b5358727d8f2cc1e65b65f43ce2f8bfb0"
 }
