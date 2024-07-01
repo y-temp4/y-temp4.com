@@ -11,6 +11,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '静寂の技法',
+      url: 'https://www.amazon.co.jp/dp/4492047468?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4492047468.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-6-read-books',
+      readAt: '2024.06.30',
+    },
+    {
+      title: 'サピエンス全史　下',
+      url: 'https://www.amazon.co.jp/dp/B0CLRL2QSB?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/B0CLRL2QSB.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-6-read-books',
+      readAt: '2024.06.14',
+    },
+    {
       title: '言ってはいけない 残酷すぎる真実',
       url: 'https://www.amazon.co.jp/dp/4106106639?tag=lorem-ipsum-22',
       cover:
