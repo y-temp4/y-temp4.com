@@ -270,7 +270,7 @@ export const Books = (): JSX.Element => {
       {layout === 'list' && (
         <div className="flex flex-col gap-3 overflow-x-scroll">
           {books.map((book) => (
-            <div key={book.title} className="flex justify-between gap-3">
+            <div key={book.title} className="flex gap-5">
               <a href={book.url} target="_blank" rel="noopener noreferrer">
                 {book.title}
               </a>
