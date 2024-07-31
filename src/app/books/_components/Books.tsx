@@ -11,6 +11,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '無（最高の状態）',
+      url: 'https://www.amazon.co.jp/dp/4295405809?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4295405809.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-7-read-books',
+      readAt: '2024.07.31',
+    },
+    {
+      title: '銃・病原菌・鉄　（上）',
+      url: 'https://www.amazon.co.jp/dp/4794218788?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4794218788.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-7-read-books',
+      readAt: '2024.07.27',
+    },
+    {
       title: '静寂の技法',
       url: 'https://www.amazon.co.jp/dp/4492047468?tag=lorem-ipsum-22',
       cover:
