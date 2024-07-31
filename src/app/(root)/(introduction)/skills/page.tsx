@@ -21,6 +21,7 @@ export default function Page() {
     'Nuxt',
     'React',
     'Next.js',
+    'Vite',
     'Ruby on Rails',
     'GraphQL',
     'AWS',
@@ -35,12 +36,7 @@ export default function Page() {
     'Elixir',
     'Rust',
   ].join(' / ');
-  const mostInterestedSkills = [
-    'Next.js',
-    'Prisma',
-    'GraphQL',
-    'TypeScript',
-  ].join('、');
+  const mostInterestedSkills = ['Next.js', 'GraphQL', 'TypeScript'].join('、');
 
   return (
     <main>
