@@ -3,4 +3,5 @@
 node_modules
 out
 pnpm-lock.yaml
-public
+public/**/*
+!public/noflash.js

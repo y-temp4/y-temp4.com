@@ -39,6 +39,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     // https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
     <html lang="ja" className={raleway.className} suppressHydrationWarning>
+      <head>
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="/noflash.js" />
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
