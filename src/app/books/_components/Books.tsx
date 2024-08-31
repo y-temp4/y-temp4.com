@@ -220,7 +220,7 @@ export const Books = (): JSX.Element => {
     },
   ];
   return (
-    <main>
+    <div>
       <button
         className="mb-8"
         onClick={() => {
@@ -302,6 +302,6 @@ export const Books = (): JSX.Element => {
           ))}
         </div>
       )}
-    </main>
+    </div>
   );
 };
