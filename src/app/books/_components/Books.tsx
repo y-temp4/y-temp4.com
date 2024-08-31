@@ -11,6 +11,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'ウェルビーイングビジネスの教科書',
+      url: 'https://www.amazon.co.jp/dp/4776212234?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4776212234.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-8-read-books',
+      readAt: '2024.08.31',
+    },
+    {
+      title: '訂正する力',
+      url: 'https://www.amazon.co.jp/dp/4022952385?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4022952385.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-8-read-books',
+      readAt: '2024.08.24',
+    },
+    {
       title: '無（最高の状態）',
       url: 'https://www.amazon.co.jp/dp/4295405809?tag=lorem-ipsum-22',
       cover:
