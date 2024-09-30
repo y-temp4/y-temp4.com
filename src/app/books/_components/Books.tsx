@@ -11,6 +11,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'ハッピーサバイバル',
+      url: 'https://www.amazon.co.jp/dp/4899765762?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4899765762.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-9-read-books',
+      readAt: '2024.09.30',
+    },
+    {
+      title: '「怒り」がスーッと消える本',
+      url: 'https://www.amazon.co.jp/dp/4804761845?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4804761845.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-9-read-books',
+      readAt: '2024.09.27',
+    },
+    {
       title: 'ウェルビーイングビジネスの教科書',
       url: 'https://www.amazon.co.jp/dp/4776212234?tag=lorem-ipsum-22',
       cover:
