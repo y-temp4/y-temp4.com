@@ -8,12 +8,13 @@ import { Providers } from './providers';
 
 const title = 'y-temp4.com';
 const description = 'Portfolio site of y-temp4.';
+const titleTemplate = { default: title, template: `%s - ${title}` };
 
 export const metadata: Metadata = {
-  title: { default: title, template: `%s - ${title}` },
+  title: titleTemplate,
   description,
   metadataBase: new URL('https://y-temp4.com'),
-  openGraph: { title, description },
+  openGraph: { title: titleTemplate, description },
   twitter: { site: '@y_temp4', creator: '@y_temp4' },
 };
 
