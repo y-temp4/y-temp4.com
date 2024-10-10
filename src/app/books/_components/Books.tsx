@@ -284,15 +284,15 @@ export const Books = (): JSX.Element => {
         </div>
       </button>
       {layout === 'grid' && (
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap gap-3">
           {books.map((book) => (
             <div key={book.title}>
               <a href={book.url} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={book.cover}
                   alt={book.title}
-                  width="150"
-                  height="220"
+                  width="106"
+                  height="180"
                 />
               </a>
             </div>
