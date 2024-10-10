@@ -7,12 +7,17 @@ import { Books } from './_components/Books';
 
 const title = 'Books';
 
-export const metadata: Metadata = { title, openGraph: { title } };
+export const metadata: Metadata = {
+  title,
+  openGraph: { title },
+  description: 'これまでに読んだことのある本の一覧です。',
+};
 
 export default function Page() {
   return (
     <main>
       <MainHeading>Books</MainHeading>
+      <p>これまでに読んだ本の一覧です。</p>
       <Suspense>
         <Books />
       </Suspense>
