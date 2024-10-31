@@ -1,8 +1,6 @@
 import openColors from 'open-color/open-color.json';
 import type { Config } from 'tailwindcss';
 
-// const openColors = require('open-color/open-color.json');
-
 const colors = Object.entries(openColors).reduce((acc, [color, values]) => {
   if (['white', 'black'].includes(color)) return acc;
   return { ...acc, [color]: { ...(values as string[]) } };
