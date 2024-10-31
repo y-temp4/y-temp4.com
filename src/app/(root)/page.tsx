@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import type { JSX } from 'react';
 
 import { MainHeading } from '~/components/MainHeading';
 import { accounts } from '~/data/accounts';

@@ -22,26 +22,26 @@
     "ncu:prod": "ncu -u --dep prod"
   },
   "dependencies": {
-    "next": "14.2.5",
+    "next": "15.0.2",
     "next-sitemap": "4.2.3",
     "next-themes": "0.3.0",
     "nuqs": "1.17.6",
     "open-color": "git+https://github.com/y-temp4/open-color.git",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
     "tailwind-merge": "2.4.0"
   },
   "devDependencies": {
     "@tsconfig/strictest": "2.0.5",
     "@types/node": "22.0.0",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@typescript-eslint/eslint-plugin": "7.11.0",
     "@typescript-eslint/parser": "7.11.0",
     "autoprefixer": "10.4.19",
     "concurrently": "8.2.2",
     "eslint": "8.57.0",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "15.0.2",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-simple-import-sort": "12.1.0",
     "eslint-plugin-tailwindcss": "3.17.4",
@@ -54,5 +54,11 @@
     "tailwindcss": "3.4.7",
     "typescript": "5.5.4"
   },
-  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
+  "pnpm": {
+    "overrides": {
+      "@types/react": "npm:types-react@19.0.0-rc.1",
+      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    }
+  }
 }
