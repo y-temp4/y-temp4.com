@@ -11,6 +11,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '人を動かす',
+      url: 'https://www.amazon.co.jp/dp/4422100513?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4422100513.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-10-read-books',
+      readAt: '2024.10.31',
+    },
+    {
+      title: 'テクノ・リバタリアン',
+      url: 'https://www.amazon.co.jp/dp/4166614460?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4166614460.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-10-read-books',
+      readAt: '2024.10.25',
+    },
+    {
       title: 'ハッピーサバイバル',
       url: 'https://www.amazon.co.jp/dp/4899765762?tag=lorem-ipsum-22',
       cover:
