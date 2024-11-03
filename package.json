@@ -32,9 +32,7 @@
     "tailwind-merge": "2.5.4"
   },
   "devDependencies": {
-    "@eslint/compat": "1.2.2",
     "@eslint/eslintrc": "3.1.0",
-    "@eslint/js": "9.13.0",
     "@tsconfig/strictest": "2.0.5",
     "@types/node": "22.8.5",
     "@types/react": "npm:types-react@19.0.0-rc.1",
