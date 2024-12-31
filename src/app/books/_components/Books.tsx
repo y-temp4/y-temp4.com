@@ -12,6 +12,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '歯科治療の新常識',
+      url: 'https://www.amazon.co.jp/dp/487242669X?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/487242669X.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-12-read-books',
+      readAt: '2024.12.30',
+    },
+    {
+      title: 'insight(インサイト)',
+      url: 'https://www.amazon.co.jp/dp/4862762700?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4862762700.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-12-read-books',
+      readAt: '2024.12.27',
+    },
+    {
       title: '歯周病の新常識',
       url: 'https://www.amazon.co.jp/dp/4872426681?tag=lorem-ipsum-22',
       cover:
