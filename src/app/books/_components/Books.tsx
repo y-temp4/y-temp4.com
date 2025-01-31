@@ -12,6 +12,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '人を操る禁断の文章術',
+      url: 'https://www.amazon.co.jp/dp/B00T2KVX2I?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/B00T2KVX2I.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-1-read-books',
+      readAt: '2025.1.31',
+    },
+    {
+      title: '影響力の武器［新版］',
+      url: 'https://www.amazon.co.jp/dp/4414304296?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4414304296.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-1-read-books',
+      readAt: '2025.1.25',
+    },
+    {
       title: '歯科治療の新常識',
       url: 'https://www.amazon.co.jp/dp/487242669X?tag=lorem-ipsum-22',
       cover:
