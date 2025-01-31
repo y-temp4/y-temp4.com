@@ -8,7 +8,7 @@ const title = 'About me';
 export const metadata: Metadata = { title, openGraph: { title } };
 
 export default function Page() {
-  const heading = 'text-xl text-left w-full font-bold mt-8 mb-1';
+  const heading = 'text-xl text-left w-full font-bold mt-10 mb-1';
   return (
     <main>
       <MainHeading>About me</MainHeading>
@@ -103,7 +103,7 @@ export default function Page() {
       </p>
       <h3 className={heading}>ID について</h3>
       <p> 普段は以下の ID で活動していることが多いです。 </p>
-      <ul className="ml-6 list-disc">
+      <ul className="ml-6 mb-4 list-disc">
         <li>y_temp4</li>
         <li>y-temp4</li>
         <li>yt4</li>
