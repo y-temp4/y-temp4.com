@@ -12,6 +12,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'ウェブセールスライティング習得ハンドブック',
+      url: 'https://www.amazon.co.jp/dp/B0CMXB3LC6?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/B0CMXB3LC6.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-2-read-books',
+      readAt: '2025.2.28',
+    },
+    {
+      title: 'ALL for SaaS',
+      url: 'https://www.amazon.co.jp/dp/4798167355?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4798167355.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-2-read-books',
+      readAt: '2025.2.25',
+    },
+    {
       title: '人を操る禁断の文章術',
       url: 'https://www.amazon.co.jp/dp/B00T2KVX2I?tag=lorem-ipsum-22',
       cover:
