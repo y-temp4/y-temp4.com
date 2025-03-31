@@ -12,6 +12,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '22世紀の資本主義',
+      url: 'https://www.amazon.co.jp/dp/4166614746?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4166614746.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-3-read-books',
+      readAt: '2025.3.31',
+    },
+    {
+      title: 'オンライン・インフルエンス',
+      url: 'https://www.amazon.co.jp/dp/4414306388?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4414306388.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-3-read-books',
+      readAt: '2025.3.29',
+    },
+    {
       title: 'ウェブセールスライティング習得ハンドブック',
       url: 'https://www.amazon.co.jp/dp/B0CMXB3LC6?tag=lorem-ipsum-22',
       cover:
