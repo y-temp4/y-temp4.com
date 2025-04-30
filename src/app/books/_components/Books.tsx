@@ -12,6 +12,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '老いと腸',
+      url: 'https://www.amazon.co.jp/dp/4863113625?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4863113625.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-4-read-books',
+      readAt: '2025.4.28',
+    },
+    {
+      title: '免疫力をアップする科学',
+      url: 'https://www.amazon.co.jp/dp/4797364149?tag=lorem-ipsum-22',
+      cover:
+        'https://images-fe.ssl-images-amazon.com/images/P/4797364149.09.LZZZZZZZ',
+      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-4-read-books',
+      readAt: '2025.4.25',
+    },
+    {
       title: '22世紀の資本主義',
       url: 'https://www.amazon.co.jp/dp/4166614746?tag=lorem-ipsum-22',
       cover:
