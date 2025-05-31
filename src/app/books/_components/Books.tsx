@@ -12,342 +12,241 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'ランナーが知っておくべき歩き方',
+      asin: '4408338532',
+      readAt: '2025.05.31',
+    },
+    {
+      title: '退屈すれば脳はひらめく',
+      asin: '4140817267',
+      readAt: '2025.05.23',
+    },
+    {
       title: '老いと腸',
-      url: 'https://www.amazon.co.jp/dp/4863113625?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4863113625.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-4-read-books',
-      readAt: '2025.4.28',
+      asin: '4863113625',
+      readAt: '2025.04.28',
     },
     {
       title: '免疫力をアップする科学',
-      url: 'https://www.amazon.co.jp/dp/4797364149?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4797364149.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-4-read-books',
-      readAt: '2025.4.25',
+      asin: '4797364149',
+      readAt: '2025.04.25',
     },
     {
       title: '22世紀の資本主義',
-      url: 'https://www.amazon.co.jp/dp/4166614746?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4166614746.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-3-read-books',
-      readAt: '2025.3.31',
+      asin: '4166614746',
+      readAt: '2025.03.31',
     },
     {
       title: 'オンライン・インフルエンス',
-      url: 'https://www.amazon.co.jp/dp/4414306388?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4414306388.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-3-read-books',
-      readAt: '2025.3.29',
+      asin: '4414306388',
+      readAt: '2025.03.29',
     },
     {
       title: 'ウェブセールスライティング習得ハンドブック',
-      url: 'https://www.amazon.co.jp/dp/B0CMXB3LC6?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/B0CMXB3LC6.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-2-read-books',
-      readAt: '2025.2.28',
+      asin: 'B0CMXB3LC6',
+      readAt: '2025.02.28',
     },
     {
       title: 'ALL for SaaS',
-      url: 'https://www.amazon.co.jp/dp/4798167355?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4798167355.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-2-read-books',
-      readAt: '2025.2.25',
+      asin: '4798167355',
+      readAt: '2025.02.25',
     },
     {
       title: '人を操る禁断の文章術',
-      url: 'https://www.amazon.co.jp/dp/B00T2KVX2I?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/B00T2KVX2I.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-1-read-books',
-      readAt: '2025.1.31',
+      asin: 'B00T2KVX2I',
+      readAt: '2025.01.31',
     },
     {
       title: '影響力の武器［新版］',
-      url: 'https://www.amazon.co.jp/dp/4414304296?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4414304296.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2025-1-read-books',
-      readAt: '2025.1.25',
+      asin: '4414304296',
+      readAt: '2025.01.25',
     },
     {
       title: '歯科治療の新常識',
-      url: 'https://www.amazon.co.jp/dp/487242669X?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/487242669X.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-12-read-books',
+      asin: '487242669X',
       readAt: '2024.12.30',
     },
     {
       title: 'insight(インサイト)',
-      url: 'https://www.amazon.co.jp/dp/4862762700?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4862762700.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-12-read-books',
+      asin: '4862762700',
       readAt: '2024.12.27',
     },
     {
       title: '歯周病の新常識',
-      url: 'https://www.amazon.co.jp/dp/4872426681?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4872426681.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-11-read-books',
+      asin: '4872426681',
       readAt: '2024.11.30',
     },
     {
       title: 'ハイパワー・マーケティング',
-      url: 'https://www.amazon.co.jp/dp/4041056756?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4041056756.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-11-read-books',
+      asin: '4041056756',
       readAt: '2024.11.22',
     },
     {
       title: '人を動かす',
-      url: 'https://www.amazon.co.jp/dp/4422100513?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4422100513.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-10-read-books',
+      asin: '4422100513',
       readAt: '2024.10.31',
     },
     {
       title: 'テクノ・リバタリアン',
-      url: 'https://www.amazon.co.jp/dp/4166614460?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4166614460.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-10-read-books',
+      asin: '4166614460',
       readAt: '2024.10.25',
     },
     {
       title: 'ハッピーサバイバル',
-      url: 'https://www.amazon.co.jp/dp/4899765762?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4899765762.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-9-read-books',
+      asin: '4899765762',
       readAt: '2024.09.30',
     },
     {
       title: '「怒り」がスーッと消える本',
-      url: 'https://www.amazon.co.jp/dp/4804761845?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4804761845.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-9-read-books',
+      asin: '4804761845',
       readAt: '2024.09.27',
     },
     {
       title: 'ウェルビーイングビジネスの教科書',
-      url: 'https://www.amazon.co.jp/dp/4776212234?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4776212234.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-8-read-books',
+      asin: '4776212234',
       readAt: '2024.08.31',
     },
     {
       title: '訂正する力',
-      url: 'https://www.amazon.co.jp/dp/4022952385?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4022952385.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-8-read-books',
+      asin: '4022952385',
       readAt: '2024.08.24',
     },
     {
       title: '無（最高の状態）',
-      url: 'https://www.amazon.co.jp/dp/4295405809?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4295405809.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-7-read-books',
+      asin: '4295405809',
       readAt: '2024.07.31',
     },
     {
       title: '銃・病原菌・鉄　（上）',
-      url: 'https://www.amazon.co.jp/dp/4794218788?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4794218788.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-7-read-books',
+      asin: '4794218788',
       readAt: '2024.07.27',
     },
     {
       title: '静寂の技法',
-      url: 'https://www.amazon.co.jp/dp/4492047468?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4492047468.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-6-read-books',
+      asin: '4492047468',
       readAt: '2024.06.30',
     },
     {
       title: 'サピエンス全史　下',
-      url: 'https://www.amazon.co.jp/dp/B0CLRL2QSB?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/B0CLRL2QSB.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-6-read-books',
+      asin: 'B0CLRL2QSB',
       readAt: '2024.06.14',
     },
     {
       title: '言ってはいけない 残酷すぎる真実',
-      url: 'https://www.amazon.co.jp/dp/4106106639?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4106106639.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-5-read-books',
+      asin: '4106106639',
       readAt: '2024.05.24',
     },
     {
       title: 'はじめての日月神示',
-      url: 'https://www.amazon.co.jp/dp/488469936X?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/488469936X.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-5-read-books',
+      asin: '488469936X',
       readAt: '2024.05.06',
     },
     {
       title: 'エコハウスのウソ',
-      url: 'https://www.amazon.co.jp/dp/4822200531?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4822200531.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-4-read-books',
+      asin: '4822200531',
       readAt: '2024.04.28',
     },
     {
       title: '小屋を建てる',
-      url: 'https://www.amazon.co.jp/dp/4594619991?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4594619991.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-4-read-books',
+      asin: '4594619991',
       readAt: '2024.04.12',
     },
     {
       title: 'ダイナミックな田舎暮らしのススメ',
-      url: 'https://www.amazon.co.jp/dp/491067408X?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/491067408X.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-3-read-books',
+      asin: '491067408X',
       readAt: '2024.03.31',
     },
     {
       title: '天を味方につける生き方',
-      url: 'https://www.amazon.co.jp/dp/486742160X?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/486742160X.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-3-read-books',
+      asin: '486742160X',
       readAt: '2024.03.15',
     },
     {
       title: '「文章術のベストセラー100冊」のポイントを1冊にまとめてみた。',
-      url: 'https://www.amazon.co.jp/dp/4822289060?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4822289060.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-2-read-books',
+      asin: '4822289060',
       readAt: '2024.02.15',
     },
     {
       title: '最新版 肌断食',
-      url: 'https://www.amazon.co.jp/dp/4309278264?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4309278264.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-2-read-books',
+      asin: '4309278264',
       readAt: '2024.02.15',
     },
     {
       title: 'サーチ・インサイド・ユアセルフ',
-      url: 'https://www.amazon.co.jp/dp/4862762271?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4862762271.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-1-read-books',
+      asin: '4862762271',
       readAt: '2024.01.31',
     },
     {
       title: 'サピエンス全史 上',
-      url: 'https://www.amazon.co.jp/dp/B0CLRLC9J7?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/B0CLRLC9J7.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2024-1-read-books',
+      asin: 'B0CLRLC9J7',
       readAt: '2024.01.15',
     },
     {
       title: 'よいこの君主論',
-      url: 'https://www.amazon.co.jp/dp/B00KQJI5VQ?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/B00KQJI5VQ.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-12-read-books',
+      asin: 'B00KQJI5VQ',
       readAt: '2023.12.31',
     },
     {
       title: '小さな習慣',
-      url: 'https://www.amazon.co.jp/dp/B072B8S2YN?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/B072B8S2YN.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-12-read-books',
+      asin: 'B072B8S2YN',
       readAt: '2023.12.15',
     },
     {
       title: '22世紀の民主主義',
-      url: 'https://www.amazon.co.jp/dp/4815615608?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4815615608.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-11-read-books',
+      asin: '4815615608',
       readAt: '2023.11.31',
     },
     {
       title: '寿命ハック',
-      url: 'https://www.amazon.co.jp/dp/4106109778?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4106109778.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-11-read-books',
+      asin: '4106109778',
       readAt: '2023.11.15',
     },
     {
       title: '僕らはそれに抵抗できない 「依存症ビジネス」のつくられかた',
-      url: 'https://www.amazon.co.jp/dp/4478067309?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4478067309.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-10-read-books',
+      asin: '4478067309',
       readAt: '2023.10.31',
     },
     {
       title: '読書する人だけがたどり着ける場所',
-      url: 'https://www.amazon.co.jp/dp/4797398485?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4797398485.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-10-read-books',
+      asin: '4797398485',
       readAt: '2023.10.15',
     },
     {
       title: 'ストレス脳',
-      url: 'https://www.amazon.co.jp/dp/410610959X?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/410610959X.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-9-read-books',
+      asin: '410610959X',
       readAt: '2023.09.30',
     },
     {
       title: 'デジタル・ミニマリスト',
-      url: 'https://www.amazon.co.jp/dp/4152098872?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4152098872.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-9-read-books',
+      asin: '4152098872',
       readAt: '2023.09.15',
     },
     {
       title: 'スマホ脳',
-      url: 'https://www.amazon.co.jp/dp/4106108828?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4106108828.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-8-read-books',
+      asin: '4106108828',
       readAt: '2023.08.31',
     },
     {
       title: '言語の本質',
-      url: 'https://www.amazon.co.jp/dp/4121027566?tag=lorem-ipsum-22',
-      cover:
-        'https://images-fe.ssl-images-amazon.com/images/P/4121027566.09.LZZZZZZZ',
-      thoughtsURL: 'https://blog.y-temp4.com/entry/2023-8-read-books',
+      asin: '4121027566',
       readAt: '2023.08.15',
     },
   ];
+  const booksWithDetails = books.map(({ title, asin, readAt }) => {
+    const yearAndMonth = readAt.split('.');
+    const year = yearAndMonth[0];
+    let month = yearAndMonth[1];
+    if (!year || !month) throw new Error(`Invalid readAt format: ${readAt}`);
+    if (month?.startsWith('0')) month = month.slice(1);
+    return {
+      title,
+      readAt,
+      url: `https://www.amazon.co.jp/dp/${asin}?tag=lorem-ipsum-22`,
+      cover: `https://images-fe.ssl-images-amazon.com/images/P/${asin}.09.LZZZZZZZ`,
+      thoughtsURL: `https://blog.y-temp4.com/entry/${year}-${month}-read-books`,
+    };
+  });
+
   return (
     <div>
       <button
@@ -398,7 +297,7 @@ export const Books = (): JSX.Element => {
       </button>
       {layout === 'grid' && (
         <div className="flex flex-wrap gap-3">
-          {books.map((book) => (
+          {booksWithDetails.map((book) => (
             <div key={book.title}>
               <a href={book.url} target="_blank" rel="noopener noreferrer">
                 <Image
@@ -414,7 +313,7 @@ export const Books = (): JSX.Element => {
       )}
       {layout === 'list' && (
         <div className="flex flex-col gap-3 overflow-x-scroll">
-          {books.map((book) => (
+          {booksWithDetails.map((book) => (
             <div key={book.title} className="flex gap-5">
               <a href={book.url} target="_blank" rel="noopener noreferrer">
                 {book.title}
