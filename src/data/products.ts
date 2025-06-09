@@ -8,6 +8,14 @@ type Product = {
 
 export const products: Product[] = [
   {
+    name: 'みんなの話題',
+    productURL: 'https://minwada.com',
+    description: 'Next.jsとRustで構築されたモダンな議論プラットフォーム',
+    introductionURL:
+      'https://zenn.dev/typebase_dev/articles/rust-beginner-vibe-coding-5days-launch',
+    suspended: false,
+  },
+  {
     name: 'Refiner',
     productURL: 'https://www.refiner.dev',
     description:
