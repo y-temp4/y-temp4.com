@@ -12,6 +12,16 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'The Blue Zones 2nd Edition',
+      asin: '4396617976',
+      readAt: '2025.08.29',
+    },
+    {
+      title: '不調の9割は「呼吸」と「姿勢」でよくなる!',
+      asin: '4866673338',
+      readAt: '2025.08.18',
+    },
+    {
       title: 'キャッチコピーのつくり方',
       asin: '4534061188',
       readAt: '2025.07.31',
