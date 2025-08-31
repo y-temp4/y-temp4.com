@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <main>
       <MainHeading>Books</MainHeading>
-      <p>これまでに読んだ本の一覧です。</p>
+      <p>これまでに読んだ本の一覧です。リンクには広告を利用しています。</p>
       <Suspense>
         <Books />
       </Suspense>
