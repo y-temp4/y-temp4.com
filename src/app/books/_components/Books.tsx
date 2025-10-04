@@ -12,6 +12,16 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '世界一シンプルで科学的に証明された究極の食事',
+      asin: '4492046240',
+      readAt: '2025.09.30',
+    },
+    {
+      title: 'HEALTH RULES (ヘルス・ルールズ)!',
+      asin: '4087717798',
+      readAt: '2025.09.20',
+    },
+    {
       title: 'The Blue Zones 2nd Edition',
       asin: '4396617976',
       readAt: '2025.08.29',
