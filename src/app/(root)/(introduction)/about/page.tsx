@@ -90,7 +90,7 @@ export default function Page() {
       <p>
         <span className="font-bold">参考：</span>
         <a
-          href="https://blog.y-temp4.com/category/reading"
+          href="https://blog.y-temp4.com/categories/reading"
           target="_blank"
           rel="noopener noreferrer"
         >
