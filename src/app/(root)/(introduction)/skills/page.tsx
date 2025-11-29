@@ -41,7 +41,7 @@ export default function Page() {
     'Elixir',
     'Rust',
   ].join(' / ');
-  const mostInterestedSkills = ['Next.js', 'GraphQL', 'TypeScript'].join('、');
+  const mostInterestedSkills = ['Next.js', 'React', 'TypeScript'].join('、');
 
   return (
     <main>

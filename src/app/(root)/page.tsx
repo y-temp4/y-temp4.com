@@ -52,7 +52,8 @@ const SkillsSection = (): JSX.Element => (
     <p>
       Web のフロントエンド関連の技術が得意です。最近は{' '}
       <span className="font-bold">Next.js</span> や{' '}
-      <span className="font-bold">Nuxt</span> を使った開発をすることが多いです。{' '}
+      <span className="font-bold">React</span>{' '}
+      を使った開発をすることが多いです。{' '}
       <Link href="/skills">その他に触れたことがある技術</Link>
     </p>
   </>
