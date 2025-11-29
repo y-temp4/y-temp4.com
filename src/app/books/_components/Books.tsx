@@ -12,12 +12,22 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'ストックビジネスの教科書',
+      asin: 'B01N0ZHN8I',
+      readAt: '2025.10.31',
+    },
+    {
+      title: '新版「欲しい」の本質',
+      asin: '4883356329',
+      readAt: '2025.10.25',
+    },
+    {
       title: '世界一シンプルで科学的に証明された究極の食事',
       asin: '4492046240',
       readAt: '2025.09.30',
     },
     {
-      title: 'HEALTH RULES (ヘルス・ルールズ)!',
+      title: 'HEALTH RULES (ヘルス・ルールズ)',
       asin: '4087717798',
       readAt: '2025.09.20',
     },
