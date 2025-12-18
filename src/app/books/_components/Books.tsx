@@ -12,6 +12,16 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '哲学マップ',
+      asin: 'B00IE7L1WW',
+      readAt: '2025.11.30',
+    },
+    {
+      title: 'ファンベース',
+      asin: '448007127X',
+      readAt: '2025.11.28',
+    },
+    {
       title: 'ストックビジネスの教科書',
       asin: 'B01N0ZHN8I',
       readAt: '2025.10.31',
