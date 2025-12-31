@@ -12,6 +12,16 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: 'こうやって頭のなかを言語化する。',
+      asin: 'B0DNWSN8TV',
+      readAt: '2025.12.31',
+    },
+    {
+      title: '「具体⇄抽象」トレーニング',
+      asin: '4569845991',
+      readAt: '2025.12.27',
+    },
+    {
       title: '哲学マップ',
       asin: 'B00IE7L1WW',
       readAt: '2025.11.30',
