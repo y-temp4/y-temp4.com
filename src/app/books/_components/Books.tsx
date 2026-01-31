@@ -12,6 +12,16 @@ export const Books = (): JSX.Element => {
   );
   const books = [
     {
+      title: '「無理」の構造',
+      asin: 'B08G447TLW',
+      readAt: '2026.01.31',
+    },
+    {
+      title: '具体と抽象',
+      asin: 'B016LUTNI2',
+      readAt: '2026.01.24',
+    },
+    {
       title: 'こうやって頭のなかを言語化する。',
       asin: 'B0DNWSN8TV',
       readAt: '2025.12.31',
