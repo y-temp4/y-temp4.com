@@ -1,6 +1,7 @@
 // @ts-check
 
 import { FlatCompat } from '@eslint/eslintrc';
+import gitignore from 'eslint-config-flat-gitignore';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
@@ -10,6 +11,7 @@ import tseslint from 'typescript-eslint';
 const compat = new FlatCompat();
 
 const config = [
+  gitignore(),
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   ...tailwind.configs['flat/recommended'],
   ...tseslint.config({
