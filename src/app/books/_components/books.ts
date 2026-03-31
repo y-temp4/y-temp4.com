@@ -1,5 +1,15 @@
 export const books = [
   {
+    title: '１分で話せ',
+    asin: 'B07BFNPD6Q',
+    readAt: '2026.03.31',
+  },
+  {
+    title: '医療奴隷',
+    asin: '4594102093',
+    readAt: '2026.03.27',
+  },
+  {
     title: 'チーズはどこへ消えた?',
     asin: '459403019X',
     readAt: '2026.02.28',
