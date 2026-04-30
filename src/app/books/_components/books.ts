@@ -1,5 +1,15 @@
 export const books = [
   {
+    title: '要件定義の極意',
+    asin: '4798192538',
+    readAt: '2026.04.30',
+  },
+  {
+    title: 'メタ思考トレーニング',
+    asin: 'B01FSE8D1K',
+    readAt: '2026.04.25',
+  },
+  {
     title: '１分で話せ',
     asin: 'B07BFNPD6Q',
     readAt: '2026.03.31',
