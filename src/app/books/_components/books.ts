@@ -1,5 +1,15 @@
 export const books = [
   {
+    title: '一流のプロ講師が実践している話し方',
+    asin: 'B07V1LN2DS',
+    readAt: '2026.05.31',
+  },
+  {
+    title: 'プロセスエコノミー',
+    asin: 'B099W5RJ3P',
+    readAt: '2026.05.28',
+  },
+  {
     title: '要件定義の極意',
     asin: '4798192538',
     readAt: '2026.04.30',
