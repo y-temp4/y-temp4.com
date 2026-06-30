@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { parseAsStringLiteral, useQueryState } from 'nuqs';
 import type { JSX } from 'react';
-import { books } from './books';
+import { books } from './data';
 
 export const Books = (): JSX.Element => {
   const layouts = ['grid', 'list'] as const;
