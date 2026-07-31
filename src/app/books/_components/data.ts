@@ -1,5 +1,15 @@
 export const books = [
   {
+    title: '新版 科学的な適職',
+    asin: 'B0FW4TQ3Q4',
+    readAt: '2026.07.31',
+  },
+  {
+    title: '有と無',
+    asin: 'B0CW12RWZF',
+    readAt: '2026.07.25',
+  },
+  {
     title: 'パーソナリティを科学する',
     asin: '4826990456',
     readAt: '2026.06.30',
