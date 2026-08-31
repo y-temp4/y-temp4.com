@@ -1,5 +1,15 @@
 export const books = [
   {
+    title: '科学的に証明された すごい習慣大百科',
+    asin: '481563341X',
+    readAt: '2026.08.31',
+  },
+  {
+    title: 'ACT 不安・ストレスとうまくやる メンタルエクササイズ',
+    asin: 'B0C7VC9FCL',
+    readAt: '2026.08.29',
+  },
+  {
     title: '新版 科学的な適職',
     asin: 'B0FW4TQ3Q4',
     readAt: '2026.07.31',
