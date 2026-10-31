@@ -1,5 +1,15 @@
 export const books = [
   {
+    title: '超知能AIをつくれば人類は絶滅する',
+    asin: 'B0GX36STP5',
+    readAt: '2026.10.31',
+  },
+  {
+    title: 'UXデザインの法則 第2版',
+    asin: '4814401000',
+    readAt: '2026.10.30',
+  },
+  {
     title: '人は「話し方」で9割変わる',
     asin: '4774714860',
     readAt: '2026.09.30',
