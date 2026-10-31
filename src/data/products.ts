@@ -13,7 +13,7 @@ export const products: Product[] = [
     description: 'Next.jsとRustで構築されたモダンな議論プラットフォーム',
     introductionURL:
       'https://zenn.dev/typebase_dev/articles/rust-beginner-vibe-coding-5days-launch',
-    suspended: false,
+    suspended: true,
   },
   {
     name: 'Refiner',
